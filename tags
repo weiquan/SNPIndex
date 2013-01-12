@@ -1,0 +1,714 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AC_KSEQ_H	kseq.h	29;"	d
+ALL_ONE_MASK	4bit_bwt_gen.h	37;"	d
+ALL_ONE_MASK	bwt_gen.h	37;"	d
+ALL_ONE_MASK	rbwt.h	30;"	d
+ALPHABET_SIZE	4bit_bwt_gen.h	28;"	d
+ALPHABET_SIZE	bwt_gen.h	28;"	d
+ALPHABET_SIZE	rbwt.h	21;"	d
+ATTRIBUTE	utils.h	36;"	d
+ATTRIBUTE	utils.h	38;"	d
+BITS_IN_BYTE	4bit_bwt_gen.h	34;"	d
+BITS_IN_BYTE	bwt_gen.h	34;"	d
+BITS_IN_BYTE	rbwt.h	27;"	d
+BITS_IN_WORD	4bit_bwt_gen.h	33;"	d
+BITS_IN_WORD	bwt_gen.h	33;"	d
+BITS_IN_WORD	rbwt.h	26;"	d
+BITS_PER_NT	4bit_bntseq.c	167;"	d	file:
+BITS_PER_OCC_VALUE	4bit_bwt_gen.h	40;"	d
+BITS_PER_OCC_VALUE	bwt_gen.h	40;"	d
+BITS_PER_OCC_VALUE	rbwt.h	33;"	d
+BIT_PER_CHAR	4bit_bwt_gen.h	29;"	d
+BIT_PER_CHAR	bwt_gen.h	29;"	d
+BIT_PER_CHAR	rbwt.h	22;"	d
+BWA_BWT_H	bwt.h	29;"	d
+BWA_UBYTE	bntseq.h	35;"	d
+BWA_UBYTE	bwt.h	37;"	d
+BWT	4bit_bwt_gen.h	/^typedef struct BWT {$/;"	s
+BWT	4bit_bwt_gen.h	/^} BWT;$/;"	t	typeref:struct:BWT
+BWT	bwt_gen.h	/^typedef struct BWT {$/;"	s
+BWT	bwt_gen.h	/^} BWT;$/;"	t	typeref:struct:BWT
+BWT::bwtCode	4bit_bwt_gen.h	/^	unsigned int *bwtCode;				\/\/ BWT code$/;"	m	struct:BWT	access:public
+BWT::bwtCode	bwt_gen.h	/^	unsigned int *bwtCode;				\/\/ BWT code$/;"	m	struct:BWT	access:public
+BWT::bwtSizeInWord	4bit_bwt_gen.h	/^	unsigned int bwtSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::bwtSizeInWord	bwt_gen.h	/^	unsigned int bwtSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::cumulativeFreq	4bit_bwt_gen.h	/^	unsigned int *cumulativeFreq;		\/\/ cumulative frequency$/;"	m	struct:BWT	access:public
+BWT::cumulativeFreq	bwt_gen.h	/^	unsigned int *cumulativeFreq;		\/\/ cumulative frequency$/;"	m	struct:BWT	access:public
+BWT::decodeTable	4bit_bwt_gen.h	/^	DECODE_TABLE_T  *decodeTable;			\/\/ For decoding BWT by table lookup$/;"	m	struct:BWT	access:public
+BWT::decodeTable	bwt_gen.h	/^	unsigned int *decodeTable;			\/\/ For decoding BWT by table lookup$/;"	m	struct:BWT	access:public
+BWT::decodeTableGenerated	4bit_bwt_gen.h	/^    unsigned int decodeTableGenerated;	\/\/ == TRUE if decode table is generated on load and will be freed$/;"	m	struct:BWT	access:public
+BWT::decodeTableGenerated	bwt_gen.h	/^	unsigned int decodeTableGenerated;	\/\/ == TRUE if decode table is generated on load and will be freed$/;"	m	struct:BWT	access:public
+BWT::inverseSa	4bit_bwt_gen.h	/^	unsigned int *inverseSa;			\/\/ Inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+BWT::inverseSa	bwt_gen.h	/^	unsigned int *inverseSa;			\/\/ Inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+BWT::inverseSa0	4bit_bwt_gen.h	/^	unsigned int inverseSa0;			\/\/ SA-1[0]$/;"	m	struct:BWT	access:public
+BWT::inverseSa0	bwt_gen.h	/^	unsigned int inverseSa0;			\/\/ SA-1[0]$/;"	m	struct:BWT	access:public
+BWT::inverseSaInterval	4bit_bwt_gen.h	/^	unsigned int inverseSaInterval;		\/\/ interval between two inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+BWT::inverseSaInterval	bwt_gen.h	/^	unsigned int inverseSaInterval;		\/\/ interval between two inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+BWT::inverseSaSize	4bit_bwt_gen.h	/^    unsigned int inverseSaSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::inverseSaSize	bwt_gen.h	/^	unsigned int inverseSaSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::occMajorSizeInWord	4bit_bwt_gen.h	/^	unsigned int occMajorSizeInWord;	\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::occMajorSizeInWord	bwt_gen.h	/^	unsigned int occMajorSizeInWord;	\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::occSizeInWord	4bit_bwt_gen.h	/^	unsigned int occSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::occSizeInWord	bwt_gen.h	/^	unsigned int occSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::occValue	4bit_bwt_gen.h	/^	unsigned int *occValue;				\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::occValue	bwt_gen.h	/^	unsigned int *occValue;				\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::occValueMajor	4bit_bwt_gen.h	/^	unsigned int *occValueMajor;		\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::occValueMajor	bwt_gen.h	/^	unsigned int *occValueMajor;		\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::saIndexRange	4bit_bwt_gen.h	/^	SaIndexRange *saIndexRange;			\/\/ SA index range$/;"	m	struct:BWT	access:public
+BWT::saIndexRange	bwt_gen.h	/^	SaIndexRange *saIndexRange;			\/\/ SA index range$/;"	m	struct:BWT	access:public
+BWT::saIndexRangeNumOfChar	4bit_bwt_gen.h	/^	int saIndexRangeNumOfChar;			\/\/ Number of characters indexed in SA index range$/;"	m	struct:BWT	access:public
+BWT::saIndexRangeNumOfChar	bwt_gen.h	/^	int saIndexRangeNumOfChar;			\/\/ Number of characters indexed in SA index range$/;"	m	struct:BWT	access:public
+BWT::saIndexRangeSize	4bit_bwt_gen.h	/^	unsigned int saIndexRangeSize;		\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::saIndexRangeSize	bwt_gen.h	/^	unsigned int saIndexRangeSize;		\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::saInterval	4bit_bwt_gen.h	/^	unsigned int saInterval;			\/\/ interval between two SA values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::saInterval	bwt_gen.h	/^	unsigned int saInterval;			\/\/ interval between two SA values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::saValue	4bit_bwt_gen.h	/^	unsigned int *saValue;    \/\/ SA values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::saValue	bwt_gen.h	/^	unsigned int *saValue;				\/\/ SA values stored explicitly$/;"	m	struct:BWT	access:public
+BWT::saValueOnBoundary	4bit_bwt_gen.h	/^	unsigned int *saValueOnBoundary;	\/\/ Pre-calculated frequently referred data$/;"	m	struct:BWT	access:public
+BWT::saValueOnBoundary	bwt_gen.h	/^	unsigned int *saValueOnBoundary;	\/\/ Pre-calculated frequently referred data$/;"	m	struct:BWT	access:public
+BWT::saValueSharp	4bit_bwt_gen.h	/^    unsigned int *saValueSharp;$/;"	m	struct:BWT	access:public
+BWT::saValueSize	4bit_bwt_gen.h	/^	unsigned int saValueSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::saValueSize	bwt_gen.h	/^	unsigned int saValueSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+BWT::saValueSizeSharp	4bit_bwt_gen.h	/^	unsigned int saValueSizeSharp;$/;"	m	struct:BWT	access:public
+BWT::textLength	4bit_bwt_gen.h	/^	unsigned int textLength;			\/\/ length of the text$/;"	m	struct:BWT	access:public
+BWT::textLength	bwt_gen.h	/^	unsigned int textLength;			\/\/ length of the text$/;"	m	struct:BWT	access:public
+BWTClearTrailingBwtCode	4bit_bwt_gen.c	/^static void BWTClearTrailingBwtCode(BWT *bwt)$/;"	f	file:	signature:(BWT *bwt)
+BWTClearTrailingBwtCode	bwt_gen.c	/^void BWTClearTrailingBwtCode(BWT *bwt)$/;"	f	signature:(BWT *bwt)
+BWTCreate	4bit_bwt_gen.c	/^static BWT *BWTCreate(const unsigned int textLength, DECODE_TABLE_T *decodeTable)$/;"	f	file:	signature:(const unsigned int textLength, DECODE_TABLE_T *decodeTable)
+BWTCreate	bwt_gen.c	/^BWT *BWTCreate(const unsigned int textLength, unsigned int *decodeTable)$/;"	f	signature:(const unsigned int textLength, unsigned int *decodeTable)
+BWTFileSizeInWord	4bit_bwt_gen.c	/^static unsigned int BWTFileSizeInWord(const unsigned int numChar)$/;"	f	file:	signature:(const unsigned int numChar)
+BWTFileSizeInWord	bwt_gen.c	/^static unsigned int BWTFileSizeInWord(const unsigned int numChar)$/;"	f	file:	signature:(const unsigned int numChar)
+BWTFree	4bit_bwt_gen.c	/^static void BWTFree(BWT *bwt)$/;"	f	file:	signature:(BWT *bwt)
+BWTFree	bwt_gen.c	/^void BWTFree(BWT *bwt)$/;"	f	signature:(BWT *bwt)
+BWTGenerateOccValueFromBwt	4bit_bwt_gen.c	/^static void BWTGenerateOccValueFromBwt(const unsigned int*  bwt, unsigned int* __restrict occValue,$/;"	f	file:	signature:(const unsigned int* bwt, unsigned int* __restrict occValue, unsigned int* __restrict occValueMajor, const unsigned int textLength, const DECODE_TABLE_T* decodeTable)
+BWTGenerateOccValueFromBwt	bwt_gen.c	/^void BWTGenerateOccValueFromBwt(const unsigned int*  bwt, unsigned int* __restrict occValue,$/;"	f	signature:(const unsigned int* bwt, unsigned int* __restrict occValue, unsigned int* __restrict occValueMajor, const unsigned int textLength, const unsigned int* decodeTable)
+BWTINC_INSERT_SORT_NUM_ITEM	4bit_bwt_gen.h	48;"	d
+BWTINC_INSERT_SORT_NUM_ITEM	bwt_gen.h	48;"	d
+BWTInc	4bit_bwt_gen.h	/^typedef struct BWTInc {$/;"	s
+BWTInc	4bit_bwt_gen.h	/^} BWTInc;$/;"	t	typeref:struct:BWTInc
+BWTInc	bwt_gen.h	/^typedef struct BWTInc {$/;"	s
+BWTInc	bwt_gen.h	/^} BWTInc;$/;"	t	typeref:struct:BWTInc
+BWTInc::availableWord	4bit_bwt_gen.h	/^	unsigned int availableWord;$/;"	m	struct:BWTInc	access:public
+BWTInc::availableWord	bwt_gen.h	/^	unsigned int availableWord;$/;"	m	struct:BWTInc	access:public
+BWTInc::buildSize	4bit_bwt_gen.h	/^	unsigned int buildSize;$/;"	m	struct:BWTInc	access:public
+BWTInc::buildSize	bwt_gen.h	/^	unsigned int buildSize;$/;"	m	struct:BWTInc	access:public
+BWTInc::bwt	4bit_bwt_gen.h	/^	BWT *bwt;$/;"	m	struct:BWTInc	access:public
+BWTInc::bwt	bwt_gen.h	/^	BWT *bwt;$/;"	m	struct:BWTInc	access:public
+BWTInc::cumulativeCountInCurrentBuild	4bit_bwt_gen.h	/^	unsigned int *cumulativeCountInCurrentBuild;$/;"	m	struct:BWTInc	access:public
+BWTInc::cumulativeCountInCurrentBuild	bwt_gen.h	/^	unsigned int *cumulativeCountInCurrentBuild;$/;"	m	struct:BWTInc	access:public
+BWTInc::firstCharInLastIteration	4bit_bwt_gen.h	/^	unsigned int firstCharInLastIteration;$/;"	m	struct:BWTInc	access:public
+BWTInc::firstCharInLastIteration	bwt_gen.h	/^	unsigned int firstCharInLastIteration;$/;"	m	struct:BWTInc	access:public
+BWTInc::incMaxBuildSize	4bit_bwt_gen.h	/^	unsigned int incMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+BWTInc::incMaxBuildSize	bwt_gen.h	/^	unsigned int incMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+BWTInc::initialMaxBuildSize	4bit_bwt_gen.h	/^	unsigned int initialMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+BWTInc::initialMaxBuildSize	bwt_gen.h	/^	unsigned int initialMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+BWTInc::numberOfIterationDone	4bit_bwt_gen.h	/^	unsigned int numberOfIterationDone;$/;"	m	struct:BWTInc	access:public
+BWTInc::numberOfIterationDone	bwt_gen.h	/^	unsigned int numberOfIterationDone;$/;"	m	struct:BWTInc	access:public
+BWTInc::packedShift	4bit_bwt_gen.h	/^	unsigned int *packedShift;$/;"	m	struct:BWTInc	access:public
+BWTInc::packedShift	bwt_gen.h	/^	unsigned int *packedShift;$/;"	m	struct:BWTInc	access:public
+BWTInc::packedText	4bit_bwt_gen.h	/^	unsigned int *packedText;$/;"	m	struct:BWTInc	access:public
+BWTInc::packedText	bwt_gen.h	/^	unsigned int *packedText;$/;"	m	struct:BWTInc	access:public
+BWTInc::targetNBit	4bit_bwt_gen.h	/^	float targetNBit;$/;"	m	struct:BWTInc	access:public
+BWTInc::targetNBit	bwt_gen.h	/^	float targetNBit;$/;"	m	struct:BWTInc	access:public
+BWTInc::targetTextLength	4bit_bwt_gen.h	/^	unsigned int targetTextLength;$/;"	m	struct:BWTInc	access:public
+BWTInc::targetTextLength	bwt_gen.h	/^	unsigned int targetTextLength;$/;"	m	struct:BWTInc	access:public
+BWTInc::textBuffer	4bit_bwt_gen.h	/^	unsigned char *textBuffer;$/;"	m	struct:BWTInc	access:public
+BWTInc::textBuffer	bwt_gen.h	/^	unsigned char *textBuffer;$/;"	m	struct:BWTInc	access:public
+BWTInc::workingMemory	4bit_bwt_gen.h	/^	unsigned int *workingMemory;$/;"	m	struct:BWTInc	access:public
+BWTInc::workingMemory	bwt_gen.h	/^	unsigned int *workingMemory;$/;"	m	struct:BWTInc	access:public
+BWTIncBuildBwt	4bit_bwt_gen.c	/^static void BWTIncBuildBwt(unsigned int*  seq, const unsigned int *relativeRank, const unsigned int numChar,$/;"	f	file:	signature:(unsigned int* seq, const unsigned int *relativeRank, const unsigned int numChar, const unsigned int *cumulativeCount)
+BWTIncBuildBwt	bwt_gen.c	/^static void BWTIncBuildBwt(unsigned int*  seq, const unsigned int *relativeRank, const unsigned int numChar,$/;"	f	file:	signature:(unsigned int* seq, const unsigned int *relativeRank, const unsigned int numChar, const unsigned int *cumulativeCount)
+BWTIncBuildPackedBwt	4bit_bwt_gen.c	/^static void BWTIncBuildPackedBwt(const unsigned int *relativeRank, unsigned int* __restrict bwt, const unsigned int numChar,$/;"	f	file:	signature:(const unsigned int *relativeRank, unsigned int* __restrict bwt, const unsigned int numChar, const unsigned int *cumulativeCount, const unsigned int *packedShift)
+BWTIncBuildPackedBwt	bwt_gen.c	/^static void BWTIncBuildPackedBwt(const unsigned int *relativeRank, unsigned int* __restrict bwt, const unsigned int numChar,$/;"	f	file:	signature:(const unsigned int *relativeRank, unsigned int* __restrict bwt, const unsigned int numChar, const unsigned int *cumulativeCount, const unsigned int *packedShift)
+BWTIncBuildRelativeRank	4bit_bwt_gen.c	/^static void BWTIncBuildRelativeRank(unsigned int* __restrict sortedRank, unsigned int* __restrict seq,$/;"	f	file:	signature:(unsigned int* __restrict sortedRank, unsigned int* __restrict seq, unsigned int* __restrict relativeRank, const unsigned int numItem, unsigned int oldInverseSa0, const unsigned int *cumulativeCount)
+BWTIncBuildRelativeRank	bwt_gen.c	/^static void BWTIncBuildRelativeRank(unsigned int* __restrict sortedRank, unsigned int* __restrict seq,$/;"	f	file:	signature:(unsigned int* __restrict sortedRank, unsigned int* __restrict seq, unsigned int* __restrict relativeRank, const unsigned int numItem, unsigned int oldInverseSa0, const unsigned int *cumulativeCount)
+BWTIncConstruct	4bit_bwt_gen.c	/^static void BWTIncConstruct(BWTInc *bwtInc, const unsigned int numChar)$/;"	f	file:	signature:(BWTInc *bwtInc, const unsigned int numChar)
+BWTIncConstruct	bwt_gen.c	/^static void BWTIncConstruct(BWTInc *bwtInc, const unsigned int numChar)$/;"	f	file:	signature:(BWTInc *bwtInc, const unsigned int numChar)
+BWTIncConstructFromPacked	4bit_bwt_gen.c	/^static BWTInc *BWTIncConstructFromPacked(const char *inputFileName, const float targetNBit,$/;"	f	file:	signature:(const char *inputFileName, const float targetNBit, const unsigned int initialMaxBuildSize, const unsigned int incMaxBuildSize)
+BWTIncConstructFromPacked	bwt_gen.c	/^BWTInc *BWTIncConstructFromPacked(const char *inputFileName, const float targetNBit,$/;"	f	signature:(const char *inputFileName, const float targetNBit, const unsigned int initialMaxBuildSize, const unsigned int incMaxBuildSize)
+BWTIncCreate	4bit_bwt_gen.c	/^static BWTInc *BWTIncCreate(const unsigned int textLength, const float targetNBit,$/;"	f	file:	signature:(const unsigned int textLength, const float targetNBit, const unsigned int initialMaxBuildSize, const unsigned int incMaxBuildSize)
+BWTIncCreate	bwt_gen.c	/^BWTInc *BWTIncCreate(const unsigned int textLength, const float targetNBit,$/;"	f	signature:(const unsigned int textLength, const float targetNBit, const unsigned int initialMaxBuildSize, const unsigned int incMaxBuildSize)
+BWTIncFree	4bit_bwt_gen.c	/^static void BWTIncFree(BWTInc *bwtInc)$/;"	f	file:	signature:(BWTInc *bwtInc)
+BWTIncFree	bwt_gen.c	/^void BWTIncFree(BWTInc *bwtInc)$/;"	f	signature:(BWTInc *bwtInc)
+BWTIncGetAbsoluteRank	4bit_bwt_gen.c	/^static unsigned int BWTIncGetAbsoluteRank(BWT *bwt, unsigned int* __restrict absoluteRank, unsigned int* __restrict seq,$/;"	f	file:	signature:(BWT *bwt, unsigned int* __restrict absoluteRank, unsigned int* __restrict seq, const unsigned int *packedText, const unsigned int numChar, const unsigned int* cumulativeCount, const unsigned int firstCharInLastIteration)
+BWTIncGetAbsoluteRank	bwt_gen.c	/^static unsigned int BWTIncGetAbsoluteRank(BWT *bwt, unsigned int* __restrict absoluteRank, unsigned int* __restrict seq,$/;"	f	file:	signature:(BWT *bwt, unsigned int* __restrict absoluteRank, unsigned int* __restrict seq, const unsigned int *packedText, const unsigned int numChar, const unsigned int* cumulativeCount, const unsigned int firstCharInLastIteration)
+BWTIncMergeBwt	4bit_bwt_gen.c	/^static void BWTIncMergeBwt(const unsigned int *sortedRank, const unsigned int* oldBwt, const unsigned int *insertBwt,$/;"	f	file:	signature:(const unsigned int *sortedRank, const unsigned int* oldBwt, const unsigned int *insertBwt, unsigned int* __restrict mergedBwt, const unsigned int numOldBwt, const unsigned int numInsertBwt)
+BWTIncMergeBwt	bwt_gen.c	/^static void BWTIncMergeBwt(const unsigned int *sortedRank, const unsigned int* oldBwt, const unsigned int *insertBwt,$/;"	f	file:	signature:(const unsigned int *sortedRank, const unsigned int* oldBwt, const unsigned int *insertBwt, unsigned int* __restrict mergedBwt, const unsigned int numOldBwt, const unsigned int numInsertBwt)
+BWTIncPutPackedTextToRank	4bit_bwt_gen.c	/^static void BWTIncPutPackedTextToRank(const unsigned int *packedText, unsigned int* __restrict rank,$/;"	f	file:	signature:(const unsigned int *packedText, unsigned int* __restrict rank, unsigned int* __restrict cumulativeCount, const unsigned int numChar)
+BWTIncPutPackedTextToRank	bwt_gen.c	/^static void BWTIncPutPackedTextToRank(const unsigned int *packedText, unsigned int* __restrict rank,$/;"	f	file:	signature:(const unsigned int *packedText, unsigned int* __restrict rank, unsigned int* __restrict cumulativeCount, const unsigned int numChar)
+BWTIncSetBuildSizeAndTextAddr	4bit_bwt_gen.c	/^static void BWTIncSetBuildSizeAndTextAddr(BWTInc *bwtInc)$/;"	f	file:	signature:(BWTInc *bwtInc)
+BWTIncSetBuildSizeAndTextAddr	bwt_gen.c	/^static void BWTIncSetBuildSizeAndTextAddr(BWTInc *bwtInc)$/;"	f	file:	signature:(BWTInc *bwtInc)
+BWTIncSortKey	4bit_bwt_gen.c	/^static void BWTIncSortKey(unsigned int* __restrict key, unsigned int* __restrict seq, const unsigned int numItem)$/;"	f	file:	signature:(unsigned int* __restrict key, unsigned int* __restrict seq, const unsigned int numItem)
+BWTIncSortKey	bwt_gen.c	/^static void BWTIncSortKey(unsigned int* __restrict key, unsigned int* __restrict seq, const unsigned int numItem)$/;"	f	file:	signature:(unsigned int* __restrict key, unsigned int* __restrict seq, const unsigned int numItem)
+BWTOccValue	4bit_bwt_gen.c	/^static unsigned int BWTOccValue(const BWT *bwt, unsigned int index, const unsigned int character) $/;"	f	file:	signature:(const BWT *bwt, unsigned int index, const unsigned int character)
+BWTOccValue	bwt_gen.c	/^unsigned int BWTOccValue(const BWT *bwt, unsigned int index, const unsigned int character) {$/;"	f	signature:(const BWT *bwt, unsigned int index, const unsigned int character)
+BWTOccValueExplicit	4bit_bwt_gen.c	/^static inline unsigned int BWTOccValueExplicit(const BWT *bwt, const unsigned int occIndexExplicit,$/;"	f	file:	signature:(const BWT *bwt, const unsigned int occIndexExplicit, const unsigned int character)
+BWTOccValueExplicit	bwt_gen.c	/^static inline unsigned int BWTOccValueExplicit(const BWT *bwt, const unsigned int occIndexExplicit,$/;"	f	file:	signature:(const BWT *bwt, const unsigned int occIndexExplicit, const unsigned int character)
+BWTOccValueExplicit	rbwt.c	/^static inline unsigned int BWTOccValueExplicit(const rbwt_t *bwt, const unsigned int occExplicitIndex,$/;"	f	file:	signature:(const rbwt_t *bwt, const unsigned int occExplicitIndex, const unsigned int character)
+BWTOccValueMajorSizeInWord	4bit_bwt_gen.c	/^static unsigned int BWTOccValueMajorSizeInWord(const unsigned int numChar)$/;"	f	file:	signature:(const unsigned int numChar)
+BWTOccValueMajorSizeInWord	bwt_gen.c	/^static unsigned int BWTOccValueMajorSizeInWord(const unsigned int numChar)$/;"	f	file:	signature:(const unsigned int numChar)
+BWTOccValueMinorSizeInWord	4bit_bwt_gen.c	/^static unsigned int BWTOccValueMinorSizeInWord(const unsigned int numChar)$/;"	f	file:	signature:(const unsigned int numChar)
+BWTOccValueMinorSizeInWord	bwt_gen.c	/^static unsigned int BWTOccValueMinorSizeInWord(const unsigned int numChar)$/;"	f	file:	signature:(const unsigned int numChar)
+BWTResidentSizeInWord	4bit_bwt_gen.c	/^static unsigned int BWTResidentSizeInWord(const unsigned int numChar) {$/;"	f	file:	signature:(const unsigned int numChar)
+BWTResidentSizeInWord	bwt_gen.c	/^static unsigned int BWTResidentSizeInWord(const unsigned int numChar) {$/;"	f	file:	signature:(const unsigned int numChar)
+BWTSaveBwtCodeAndOcc	4bit_bwt_gen.c	/^static void BWTSaveBwtCodeAndOcc(const BWT *bwt, const char *bwtFileName, const char *occValueFileName)$/;"	f	file:	signature:(const BWT *bwt, const char *bwtFileName, const char *occValueFileName)
+BWTSaveBwtCodeAndOcc	bwt_gen.c	/^void BWTSaveBwtCodeAndOcc(const BWT *bwt, const char *bwtFileName, const char *occValueFileName)$/;"	f	signature:(const BWT *bwt, const char *bwtFileName, const char *occValueFileName)
+BWT_BNTSEQ_H	bntseq.h	29;"	d
+BWT_GEN_H	bwt_gen.h	26;"	d
+BYTES_IN_WORD	4bit_bwt_gen.h	35;"	d
+BYTES_IN_WORD	bwt_gen.h	35;"	d
+BYTES_IN_WORD	rbwt.h	28;"	d
+BYTE_PER_WORD	mixRef.c	56;"	d	file:
+BackwardDNAOccCount	4bit_bwt_gen.c	/^static unsigned int BackwardDNAOccCount(const unsigned int*  dna, const unsigned int index, const unsigned int character,$/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, const unsigned int character, const DECODE_TABLE_T* dnaDecodeTable)
+BackwardDNAOccCount	bwt_gen.c	/^static unsigned int BackwardDNAOccCount(const unsigned int*  dna, const unsigned int index, const unsigned int character,$/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, const unsigned int character, const unsigned int* dnaDecodeTable)
+BackwardDNAOccCount	rbwt.c	/^static inline unsigned int BackwardDNAOccCount(const unsigned int*  dna, const unsigned int index, const unsigned int character,$/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, const unsigned int character, const DECODE_TABLE_T* dnaDecodeTable)
+BitPerBytePackedChar	4bit_bwt_gen.c	/^static unsigned int BitPerBytePackedChar(const unsigned int alphabetSize)$/;"	f	file:	signature:(const unsigned int alphabetSize)
+BitPerBytePackedChar	bwt_gen.c	/^static unsigned int BitPerBytePackedChar(const unsigned int alphabetSize)$/;"	f	file:	signature:(const unsigned int alphabetSize)
+BitPerWordPackedChar	4bit_bwt_gen.c	/^static unsigned int BitPerWordPackedChar(const unsigned int alphabetSize)$/;"	f	file:	signature:(const unsigned int alphabetSize)
+BitPerWordPackedChar	bwt_gen.c	/^static unsigned int BitPerWordPackedChar(const unsigned int alphabetSize)$/;"	f	file:	signature:(const unsigned int alphabetSize)
+CC	Makefile	/^CC=			gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=		-g -Wall -O2 $/;"	m
+CHAR_IN_WORD	mixRef.c	26;"	d	file:
+CHAR_PER_BYTE	4bit_bwt_gen.h	31;"	d
+CHAR_PER_BYTE	bwt_gen.h	31;"	d
+CHAR_PER_BYTE	mixRef.c	55;"	d	file:
+CHAR_PER_BYTE	rbwt.h	24;"	d
+CHAR_PER_ITERATION	4bit_bwt_gen.c	382;"	d	file:
+CHAR_PER_WORD	4bit_bwt_gen.h	30;"	d
+CHAR_PER_WORD	bwt_gen.h	30;"	d
+CHAR_PER_WORD	mixRef.c	57;"	d	file:
+CHAR_PER_WORD	rbwt.h	23;"	d
+CHRID_SIZE	hapmap.c	23;"	d	file:
+COUNT_BITS_PER_CHAR	4bit_bwt_gen.c	52;"	d	file:
+COUNT_BITS_PER_CHAR	rbwt.h	52;"	d
+CXX	Makefile	/^CXX=		g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS=	$(CFLAGS)$/;"	m
+C_sa_intv	index1.c	/^int C_sa_intv = 32;$/;"	v
+ConvertBytePackedToWordPacked	4bit_bwt_gen.c	/^static void ConvertBytePackedToWordPacked(const unsigned char *input, unsigned int *output, const unsigned int alphabetSize,$/;"	f	file:	signature:(const unsigned char *input, unsigned int *output, const unsigned int alphabetSize, const unsigned int textLength)
+ConvertBytePackedToWordPacked	bwt_gen.c	/^static void ConvertBytePackedToWordPacked(const unsigned char *input, unsigned int *output, const unsigned int alphabetSize,$/;"	f	file:	signature:(const unsigned char *input, unsigned int *output, const unsigned int alphabetSize, const unsigned int textLength)
+DECODE_TABLE_T	4bit_bwt_gen.h	59;"	d
+DECODE_TABLE_T	rbwt.h	56;"	d
+DFLAGS	Makefile	/^DFLAGS=		#-DHAVE_PTHREAD #-DDEBUG#-D_FILE_OFFSET_BITS=64 $/;"	m
+DNA_OCC_CNT_TABLE_SIZE_IN_WORD	4bit_bwt_gen.h	38;"	d
+DNA_OCC_CNT_TABLE_SIZE_IN_WORD	bwt_gen.h	38;"	d
+DNA_OCC_CNT_TABLE_SIZE_IN_WORD	rbwt.h	31;"	d
+DNA_OCC_SUM_EXCEPTION	4bit_bwt_gen.h	57;"	d
+DNA_OCC_SUM_EXCEPTION	bwt_gen.h	57;"	d
+EQUAL_KEY_THRESHOLD	4bit_bwt_gen.c	654;"	d	file:
+EQUAL_KEY_THRESHOLD	bwt_gen.c	642;"	d	file:
+FALSE	4bit_bwt_gen.h	46;"	d
+FALSE	bwt_gen.h	46;"	d
+ForwardDNAAllOccCountNoLimit	4bit_bwt_gen.c	/^static void ForwardDNAAllOccCountNoLimit(const unsigned int*  dna, const unsigned int index,$/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, unsigned int* __restrict occCount, const DECODE_TABLE_T* dnaDecodeTable)
+ForwardDNAAllOccCountNoLimit	bwt_gen.c	/^static void ForwardDNAAllOccCountNoLimit(const unsigned int*  dna, const unsigned int index,$/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, unsigned int* __restrict occCount, const unsigned int* dnaDecodeTable)
+ForwardDNAOccCount	4bit_bwt_gen.c	/^static unsigned int ForwardDNAOccCount(const unsigned int*  dna, const unsigned int index, const unsigned int character,$/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, const unsigned int character, const DECODE_TABLE_T* dnaDecodeTable)
+ForwardDNAOccCount	bwt_gen.c	/^static unsigned int ForwardDNAOccCount(const unsigned int*  dna, const unsigned int index, const unsigned int character,$/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, const unsigned int character, const unsigned int* dnaDecodeTable)
+ForwardDNAOccCount	rbwt.c	/^static inline unsigned int ForwardDNAOccCount(const unsigned int *dna, const unsigned int index, const unsigned int character,$/;"	f	file:	signature:(const unsigned int *dna, const unsigned int index, const unsigned int character, const DECODE_TABLE_T* dnaDecodeTable)
+GenerateDNAOccCountTable	4bit_bwt_gen.c	/^static void GenerateDNAOccCountTable(DECODE_TABLE_T *dnaDecodeTable)$/;"	f	file:	signature:(DECODE_TABLE_T *dnaDecodeTable)
+GenerateDNAOccCountTable	bwt_gen.c	/^static void GenerateDNAOccCountTable(unsigned int *dnaDecodeTable)$/;"	f	file:	signature:(unsigned int *dnaDecodeTable)
+GenerateDNAOccCountTable	rbwt.c	/^void GenerateDNAOccCountTable(DECODE_TABLE_T *dnaDecodeTable)$/;"	f	signature:(DECODE_TABLE_T *dnaDecodeTable)
+INCLUDES	Makefile	/^INCLUDES=	$/;"	m
+KSEQ_DECLARE	kseq.h	228;"	d
+KSEQ_INIT	kseq.h	226;"	d
+KSEQ_INIT	localPattern.c	/^KSEQ_INIT(gzFile, gzread)$/;"	f
+KSEQ_INIT	snpSeg.c	/^KSEQ_INIT(gzFile, gzread)$/;"	f
+KSEQ_INIT2	kseq.h	220;"	d
+KSTREAM_INIT	kseq.h	143;"	d
+KSTRING_T	kseq.h	80;"	d
+KS_SEP_LINE	kseq.h	37;"	d
+KS_SEP_MAX	kseq.h	38;"	d
+KS_SEP_SPACE	kseq.h	35;"	d
+KS_SEP_TAB	kseq.h	36;"	d
+L2	bwt.h	/^	bwtint_t L2[5]; \/\/ C(), cumulative count$/;"	m	struct:__anon6	access:public
+LH3_UTILS_H	utils.h	29;"	d
+LIBS	Makefile	/^LIBS=		-lm -lz -lpthread $/;"	m
+LKT_build_lookuptable	LookUpTable.c	/^void LKT_build_lookuptable(const char *fn_pac, lookupTable_t *lkt)$/;"	f	signature:(const char *fn_pac, lookupTable_t *lkt)
+LKT_build_lookuptable	LookUpTable.h	/^void LKT_build_lookuptable(const char *fn_pac, lookupTable_t *lkt);$/;"	p	signature:(const char *fn_pac, lookupTable_t *lkt)
+LKT_destroy	LookUpTable.c	/^void LKT_destroy(lookupTable_t *lkt)$/;"	f	signature:(lookupTable_t *lkt)
+LKT_destroy	LookUpTable.h	/^void LKT_destroy(lookupTable_t *lkt);$/;"	p	signature:(lookupTable_t *lkt)
+LKT_init	LookUpTable.c	/^lookupTable_t *LKT_init(const int maxLookupLen)$/;"	f	signature:(const int maxLookupLen)
+LKT_init	LookUpTable.h	/^lookupTable_t *LKT_init(const int maxLookupLen);$/;"	p	signature:(const int maxLookupLen)
+LKT_lookup_sa	LookUpTable.h	/^static inline void LKT_lookup_sa(lookupTable_t *lkt, const uint8_t *seq, int from, int to, uint32_t *l, uint32_t *k)$/;"	f	signature:(lookupTable_t *lkt, const uint8_t *seq, int from, int to, uint32_t *l, uint32_t *k)
+LKT_output	LookUpTable.c	/^void LKT_output(const char *fn_lkt, lookupTable_t *lkt)$/;"	f	signature:(const char *fn_lkt, lookupTable_t *lkt)
+LKT_restore	LookUpTable.c	/^lookupTable_t *LKT_restore(const char *fn_lkt)$/;"	f	signature:(const char *fn_lkt)
+LKT_restore	LookUpTable.h	/^lookupTable_t *LKT_restore(const char *fn_lkt);$/;"	p	signature:(const char *fn_lkt)
+LKT_seq2LktItem	LookUpTable.c	/^uint32_t LKT_seq2LktItem(const uint8_t *seq, int from, int to)$/;"	f	signature:(const uint8_t *seq, int from, int to)
+LKT_seq2LktItem	LookUpTable.h	/^uint32_t LKT_seq2LktItem(const uint8_t *seq, int from, int to);$/;"	p	signature:(const uint8_t *seq, int from, int to)
+LOCALPATTERN	localPattern.h	2;"	d
+L_LP	rbwt.c	336;"	d	file:
+MASK_4BIT	4bit_bntseq.c	164;"	d	file:
+MASK_CHAR	rbwt.h	47;"	d
+MASK_CHAR_IN_WORD	4bit_bwt_gen.c	53;"	d	file:
+MASK_CHAR_IN_WORD	rbwt.h	53;"	d
+MATCH	rbwt.h	49;"	d
+MIN_AVAILABLE_WORD	4bit_bwt_gen.c	300;"	d	file:
+NT_A	rbwt.h	40;"	d
+NT_C	rbwt.h	41;"	d
+NT_DOLLOR	rbwt.h	45;"	d
+NT_G	rbwt.h	42;"	d
+NT_PER_BYTE	4bit_bntseq.c	166;"	d	file:
+NT_SHARP	rbwt.h	44;"	d
+NT_T	rbwt.h	43;"	d
+N_nt	4bit_bntseq.c	165;"	d	file:
+OBJS	Makefile	/^OBJS=		utils.o bwt.o bwtio.o bwtaln.o bwtgap.o is.o \\$/;"	m
+OCC_INTERVAL	4bit_bwt_gen.h	42;"	d
+OCC_INTERVAL	bwt.h	34;"	d
+OCC_INTERVAL	bwt_gen.h	42;"	d
+OCC_INTERVAL	rbwt.h	35;"	d
+OCC_INTERVAL_MAJOR	4bit_bwt_gen.h	43;"	d
+OCC_INTERVAL_MAJOR	bwt_gen.h	43;"	d
+OCC_INTERVAL_MAJOR	rbwt.h	36;"	d
+OCC_VALUE_PER_WORD	4bit_bwt_gen.h	41;"	d
+OCC_VALUE_PER_WORD	bwt_gen.h	41;"	d
+OCC_VALUE_PER_WORD	rbwt.h	34;"	d
+POWER_OF_2	LookUpTable.c	27;"	d	file:
+PROG	Makefile	/^PROG=		index$/;"	m
+RBWT_H	rbwt.h	2;"	d
+Rbwt2_destroy	rbwt.c	/^void Rbwt2_destroy(rbwt2_t *rbwt2)$/;"	f	signature:(rbwt2_t *rbwt2)
+Rbwt2_destroy	rbwt.h	/^void Rbwt2_destroy(rbwt2_t *rbwt2);$/;"	p	signature:(rbwt2_t *rbwt2)
+Rbwt2_init	rbwt.c	/^rbwt2_t *Rbwt2_init(const char *prefix)$/;"	f	signature:(const char *prefix)
+Rbwt2_init	rbwt.h	/^rbwt2_t *Rbwt2_init(const char *prefix);$/;"	p	signature:(const char *prefix)
+Rbwt2_save_sa	rbwt.c	/^void Rbwt2_save_sa(const char *prefix,const char *fn_localpattern)$/;"	f	signature:(const char *prefix,const char *fn_localpattern)
+Rbwt2_save_sa	rbwt.h	/^void Rbwt2_save_sa(const char *prefix,const char *fn_localpattern);$/;"	p	signature:(const char *prefix,const char *fn_localpattern)
+Rbwt_BWTOccValue	rbwt.c	/^unsigned int Rbwt_BWTOccValue(const rbwt_t *bwt, unsigned int index, const unsigned int character) $/;"	f	signature:(const rbwt_t *bwt, unsigned int index, const unsigned int character)
+Rbwt_BWTOccValue	rbwt.h	/^unsigned int Rbwt_BWTOccValue(const rbwt_t *bwt, unsigned int index, const unsigned int character); $/;"	p	signature:(const rbwt_t *bwt, unsigned int index, const unsigned int character)
+Rbwt_BWTOccValue2	rbwt.c	/^uint32_t Rbwt_BWTOccValue2(const rbwt_t *bwt, unsigned int index, const unsigned int character, unsigned int *occSharp)$/;"	f	signature:(const rbwt_t *bwt, unsigned int index, const unsigned int character, unsigned int *occSharp)
+Rbwt_BWTOccValue2	rbwt.h	/^uint32_t Rbwt_BWTOccValue2(const rbwt_t *bwt, unsigned int index, const unsigned int character, unsigned int *occSharp);$/;"	p	signature:(const rbwt_t *bwt, unsigned int index, const unsigned int character, unsigned int *occSharp)
+Rbwt_back_bwt_sa	rbwt.c	/^uint32_t Rbwt_back_bwt_sa(rbwt_t *bwt,  uint32_t sa_index)$/;"	f	signature:(rbwt_t *bwt, uint32_t sa_index)
+Rbwt_back_bwt_sa	rbwt.h	/^uint32_t Rbwt_back_bwt_sa(rbwt_t *bwt,  uint32_t sa_index);$/;"	p	signature:(rbwt_t *bwt, uint32_t sa_index)
+Rbwt_bw_search	rbwt.c	/^static inline int Rbwt_bw_search(rbwt_t *bwt, const SaIndexRange *in_saIndex, uint8_t c, SaIndexRange *out_saIndex)$/;"	f	file:	signature:(rbwt_t *bwt, const SaIndexRange *in_saIndex, uint8_t c, SaIndexRange *out_saIndex)
+Rbwt_bwt2nt	rbwt.h	/^static inline uint8_t Rbwt_bwt2nt(rbwt_t* bwt, uint32_t pos)$/;"	f	signature:(rbwt_t* bwt, uint32_t pos)
+Rbwt_bwt_bwtgen	4bit_bwt_gen.c	/^void Rbwt_bwt_bwtgen(const char *fn_pac, const char *fn)$/;"	f	signature:(const char *fn_pac, const char *fn)
+Rbwt_bwt_bwtgen	rbwt.h	/^void Rbwt_bwt_bwtgen(const char *fn_pac, const char *fn);$/;"	p	signature:(const char *fn_pac, const char *fn)
+Rbwt_bwt_bwtgen_main	4bit_bwt_gen.c	/^int Rbwt_bwt_bwtgen_main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+Rbwt_destroy	rbwt.c	/^void Rbwt_destroy(rbwt_t* bwt)$/;"	f	signature:(rbwt_t* bwt)
+Rbwt_destroy	rbwt.h	/^void Rbwt_destroy(rbwt_t* bwt);$/;"	p	signature:(rbwt_t* bwt)
+Rbwt_exact_match_backward	rbwt.c	/^int Rbwt_exact_match_backward(const rbwt_t *bwt, const uint8_t *query, const int qlen, uint32_t *k, uint32_t *l)$/;"	f	signature:(const rbwt_t *bwt, const uint8_t *query, const int qlen, uint32_t *k, uint32_t *l)
+Rbwt_exact_match_backward	rbwt.h	/^int Rbwt_exact_match_backward(const rbwt_t *bwt, const uint8_t *query, const int qlen, uint32_t *k, uint32_t *l);$/;"	p	signature:(const rbwt_t *bwt, const uint8_t *query, const int qlen, uint32_t *k, uint32_t *l)
+Rbwt_exact_match_forward	rbwt.c	/^int Rbwt_exact_match_forward(const rbwt_t *rbwt, const uint8_t *query, const int qlen, uint32_t *k, uint32_t *l)$/;"	f	signature:(const rbwt_t *rbwt, const uint8_t *query, const int qlen, uint32_t *k, uint32_t *l)
+Rbwt_exact_match_forward	rbwt.h	/^int Rbwt_exact_match_forward(const rbwt_t *rbwt, const uint8_t *query, const int qlen, uint32_t *k, uint32_t *l);$/;"	p	signature:(const rbwt_t *rbwt, const uint8_t *query, const int qlen, uint32_t *k, uint32_t *l)
+Rbwt_for_bwt_sa	rbwt.c	/^uint32_t Rbwt_for_bwt_sa(rbwt_t *bwt,  uint32_t sa_index)$/;"	f	signature:(rbwt_t *bwt, uint32_t sa_index)
+Rbwt_for_bwt_sa	rbwt.h	/^uint32_t Rbwt_for_bwt_sa(rbwt_t *bwt,  uint32_t sa_index);$/;"	p	signature:(rbwt_t *bwt, uint32_t sa_index)
+Rbwt_gen_sa	rbwt.c	/^void Rbwt_gen_sa(rbwt_t *bwt, const sharp2Ri_t *sharp2Ri,  const int direction)$/;"	f	signature:(rbwt_t *bwt, const sharp2Ri_t *sharp2Ri, const int direction)
+Rbwt_gen_sa	rbwt.h	/^void Rbwt_gen_sa(rbwt_t *bwt, const sharp2Ri_t *sharp2Ri,  int direction);$/;"	p	signature:(rbwt_t *bwt, const sharp2Ri_t *sharp2Ri, int direction)
+Rbwt_init	rbwt.c	/^rbwt_t *Rbwt_init(const char *fn_bwt, const char* fn_occ)$/;"	f	signature:(const char *fn_bwt, const char* fn_occ)
+Rbwt_init	rbwt.h	/^rbwt_t *Rbwt_init(const char *bwt_file_name, const char* occ_file_name);$/;"	p	signature:(const char *bwt_file_name, const char* occ_file_name)
+Rbwt_restore_bwt	rbwt.c	/^void Rbwt_restore_bwt(rbwt_t *bwt, const char *fn_bwt)$/;"	f	signature:(rbwt_t *bwt, const char *fn_bwt)
+Rbwt_restore_bwt	rbwt.h	/^void Rbwt_restore_bwt(rbwt_t *bwt, const char *bwt_file_name);$/;"	p	signature:(rbwt_t *bwt, const char *bwt_file_name)
+Rbwt_restore_occ	rbwt.c	/^void Rbwt_restore_occ( rbwt_t *bwt, const char *fn_occ)$/;"	f	signature:( rbwt_t *bwt, const char *fn_occ)
+Rbwt_restore_occ	rbwt.h	/^void Rbwt_restore_occ(rbwt_t *bwt, const char *occ_file_name);$/;"	p	signature:(rbwt_t *bwt, const char *occ_file_name)
+Rbwt_restore_sa	rbwt.c	/^void Rbwt_restore_sa(rbwt_t *rbwt, const char *fn_sa)$/;"	f	signature:(rbwt_t *rbwt, const char *fn_sa)
+Rbwt_restore_sa	rbwt.h	/^void Rbwt_restore_sa(rbwt_t *rbwt, const char *fn_sa);$/;"	p	signature:(rbwt_t *rbwt, const char *fn_sa)
+Rbwt_sharp2Ri_destroy	rbwt.c	/^void Rbwt_sharp2Ri_destroy(sharp2Ri_t *sharp2Ri)$/;"	f	signature:(sharp2Ri_t *sharp2Ri)
+Rbwt_sharp2Ri_destroy	rbwt.h	/^void Rbwt_sharp2Ri_destroy(sharp2Ri_t *sharp2Ri);$/;"	p	signature:(sharp2Ri_t *sharp2Ri)
+Rbwt_sharp2Ri_init	rbwt.c	/^sharp2Ri_t *Rbwt_sharp2Ri_init(const char *fn_localpattern)$/;"	f	signature:(const char *fn_localpattern)
+Rbwt_sharp2Ri_init	rbwt.h	/^sharp2Ri_t *Rbwt_sharp2Ri_init(const char *fn_localpattern);$/;"	p	signature:(const char *fn_localpattern)
+SA_INTERVAL	rbwt.c	426;"	d	file:
+SUBDIRS	Makefile	/^SUBDIRS=	. $/;"	m
+SaIndexRange	4bit_bwt_gen.h	/^typedef struct SaIndexRange {$/;"	s
+SaIndexRange	4bit_bwt_gen.h	/^} SaIndexRange;$/;"	t	typeref:struct:SaIndexRange
+SaIndexRange	bwt_gen.h	/^typedef struct SaIndexRange {$/;"	s
+SaIndexRange	bwt_gen.h	/^} SaIndexRange;$/;"	t	typeref:struct:SaIndexRange
+SaIndexRange	rbwt.h	/^typedef struct SaIndexRange {$/;"	s
+SaIndexRange	rbwt.h	/^} SaIndexRange;$/;"	t	typeref:struct:SaIndexRange
+SaIndexRange::endSaIndex	4bit_bwt_gen.h	/^	unsigned int endSaIndex;$/;"	m	struct:SaIndexRange	access:public
+SaIndexRange::endSaIndex	bwt_gen.h	/^	unsigned int endSaIndex;$/;"	m	struct:SaIndexRange	access:public
+SaIndexRange::endSaIndex	rbwt.h	/^	unsigned int endSaIndex;$/;"	m	struct:SaIndexRange	access:public
+SaIndexRange::startSaIndex	4bit_bwt_gen.h	/^	unsigned int startSaIndex;$/;"	m	struct:SaIndexRange	access:public
+SaIndexRange::startSaIndex	bwt_gen.h	/^	unsigned int startSaIndex;$/;"	m	struct:SaIndexRange	access:public
+SaIndexRange::startSaIndex	rbwt.h	/^	unsigned int startSaIndex;$/;"	m	struct:SaIndexRange	access:public
+TMP_SIZE	hapmap.c	24;"	d	file:
+TRUE	4bit_bwt_gen.h	45;"	d
+TRUE	bwt_gen.h	45;"	d
+TextLengthFromBytePacked	4bit_bwt_gen.c	/^static unsigned int TextLengthFromBytePacked(unsigned int bytePackedLength, unsigned int bitPerChar,$/;"	f	file:	signature:(unsigned int bytePackedLength, unsigned int bitPerChar, unsigned int lastByteLength)
+TextLengthFromBytePacked	bwt_gen.c	/^static unsigned int TextLengthFromBytePacked(unsigned int bytePackedLength, unsigned int bitPerChar,$/;"	f	file:	signature:(unsigned int bytePackedLength, unsigned int bitPerChar, unsigned int lastByteLength)
+UNMATCH	rbwt.h	50;"	d
+WIN_MAX_SNP_NUM	localPattern.c	167;"	d	file:
+WIN_MAX_SNP_NUM	snpSeg.c	167;"	d	file:
+_HAPMAP_H_	hapmap.h	19;"	d
+__BackwardDNAOccCount	rbwt.c	/^static DECODE_TABLE_T __BackwardDNAOccCount(const unsigned int*  dna, const unsigned int index, $/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, const DECODE_TABLE_T* dnaDecodeTable)
+__ForwardDNAOccCount	rbwt.c	/^static DECODE_TABLE_T __ForwardDNAOccCount(const unsigned int*  dna, const unsigned int index,$/;"	f	file:	signature:(const unsigned int* dna, const unsigned int index, const DECODE_TABLE_T* dnaDecodeTable)
+__KSEQ_BASIC	kseq.h	151;"	d
+__KSEQ_READ	kseq.h	171;"	d
+__KSEQ_TYPE	kseq.h	213;"	d
+__KS_BASIC	kseq.h	50;"	d
+__KS_GETC	kseq.h	66;"	d
+__KS_GETUNTIL	kseq.h	91;"	d
+__KS_TYPE	kseq.h	40;"	d
+__LOOLUPTABLE_H	LookUpTable.h	2;"	d
+__anon1::anno	bntseq.h	/^	char *name, *anno;$/;"	m	struct:__anon1	access:public
+__anon1::gi	bntseq.h	/^	uint32_t gi;$/;"	m	struct:__anon1	access:public
+__anon1::len	bntseq.h	/^	int32_t len;$/;"	m	struct:__anon1	access:public
+__anon1::n_ambs	bntseq.h	/^	int32_t n_ambs;$/;"	m	struct:__anon1	access:public
+__anon1::name	bntseq.h	/^	char *name, *anno;$/;"	m	struct:__anon1	access:public
+__anon1::offset	bntseq.h	/^	int64_t offset;$/;"	m	struct:__anon1	access:public
+__anon2::amb	bntseq.h	/^	char amb;$/;"	m	struct:__anon2	access:public
+__anon2::len	bntseq.h	/^	int32_t len;$/;"	m	struct:__anon2	access:public
+__anon2::offset	bntseq.h	/^	int64_t offset;$/;"	m	struct:__anon2	access:public
+__anon3::ambs	bntseq.h	/^	bntamb1_t *ambs; \/\/ n_holes elements$/;"	m	struct:__anon3	access:public
+__anon3::anns	bntseq.h	/^	bntann1_t *anns; \/\/ n_seqs elements$/;"	m	struct:__anon3	access:public
+__anon3::fp_pac	bntseq.h	/^	FILE *fp_pac;$/;"	m	struct:__anon3	access:public
+__anon3::l_pac	bntseq.h	/^	int64_t l_pac;$/;"	m	struct:__anon3	access:public
+__anon3::n_holes	bntseq.h	/^	int32_t n_holes;$/;"	m	struct:__anon3	access:public
+__anon3::n_seqs	bntseq.h	/^	int32_t n_seqs;$/;"	m	struct:__anon3	access:public
+__anon3::seed	bntseq.h	/^	uint32_t seed;$/;"	m	struct:__anon3	access:public
+__anon4::item	LookUpTable.h	/^    uint32_t *item;$/;"	m	struct:__anon4	access:public
+__anon4::maxLookupLen	LookUpTable.h	/^    uint32_t maxLookupLen;$/;"	m	struct:__anon4	access:public
+__anon4::n_item	LookUpTable.h	/^    uint32_t n_item;$/;"	m	struct:__anon4	access:public
+__anon5::chrID	hapmap.h	/^    char *chrID;$/;"	m	struct:__anon5	access:public
+__anon5::fp_hapmap	hapmap.h	/^    FILE *fp_hapmap;$/;"	m	struct:__anon5	access:public
+__anon5::snp_num	hapmap.h	/^    uint32_t snp_num;$/;"	m	struct:__anon5	access:public
+__anon5::snp_pos	hapmap.h	/^    uint32_t *snp_pos;$/;"	m	struct:__anon5	access:public
+__anon5::snp_type	hapmap.h	/^    uint8_t *snp_type;$/;"	m	struct:__anon5	access:public
+__anon6::L2	bwt.h	/^	bwtint_t L2[5]; \/\/ C(), cumulative count$/;"	m	struct:__anon6	access:public
+__anon6::bwt	bwt.h	/^	uint32_t *bwt; \/\/ BWT$/;"	m	struct:__anon6	access:public
+__anon6::bwt_size	bwt.h	/^	bwtint_t bwt_size; \/\/ size of bwt, about seq_len\/4$/;"	m	struct:__anon6	access:public
+__anon6::cnt_table	bwt.h	/^	uint32_t cnt_table[256];$/;"	m	struct:__anon6	access:public
+__anon6::n_sa	bwt.h	/^	bwtint_t n_sa;$/;"	m	struct:__anon6	access:public
+__anon6::primary	bwt.h	/^	bwtint_t primary; \/\/ S^{-1}(0), or the primary index of BWT$/;"	m	struct:__anon6	access:public
+__anon6::sa	bwt.h	/^	bwtint_t *sa;$/;"	m	struct:__anon6	access:public
+__anon6::sa_intv	bwt.h	/^	int sa_intv;$/;"	m	struct:__anon6	access:public
+__anon6::seq_len	bwt.h	/^	bwtint_t seq_len; \/\/ sequence length$/;"	m	struct:__anon6	access:public
+__anon7::l	mixRef.h	/^    uint32_t l;$/;"	m	struct:__anon7	access:public
+__anon7::seq	mixRef.h	/^    uint32_t *seq;$/;"	m	struct:__anon7	access:public
+__get_pac	mixRef.c	95;"	d	file:
+__kstring_t	kseq.h	/^typedef struct __kstring_t {$/;"	s
+__kstring_t::l	kseq.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+__kstring_t::m	kseq.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+__kstring_t::s	kseq.h	/^	char *s;$/;"	m	struct:__kstring_t	access:public
+__occ_aux	bwt.c	/^static inline int __occ_aux(uint64_t y, int c)$/;"	f	file:	signature:(uint64_t y, int c)
+__occ_aux4	bwt.c	154;"	d	file:
+__set_pac	mixRef.c	94;"	d	file:
+_get_pac	4bit_bntseq.c	169;"	d	file:
+_get_pac	LookUpTable.c	26;"	d	file:
+_get_pac	test_fa2pac.c	21;"	d	file:
+_set_pac	4bit_bntseq.c	168;"	d	file:
+_set_pac	LookUpTable.c	25;"	d	file:
+amb	bntseq.h	/^	char amb;$/;"	m	struct:__anon2	access:public
+ambs	bntseq.h	/^	bntamb1_t *ambs; \/\/ n_holes elements$/;"	m	struct:__anon3	access:public
+anno	bntseq.h	/^	char *name, *anno;$/;"	m	struct:__anon1	access:public
+anns	bntseq.h	/^	bntann1_t *anns; \/\/ n_seqs elements$/;"	m	struct:__anon3	access:public
+availableWord	4bit_bwt_gen.h	/^	unsigned int availableWord;$/;"	m	struct:BWTInc	access:public
+availableWord	bwt_gen.h	/^	unsigned int availableWord;$/;"	m	struct:BWTInc	access:public
+average	4bit_bwt_gen.h	50;"	d
+average	bwt_gen.h	50;"	d
+bit_add1	4bit_bntseq.c	/^static uint8_t *4bit_add1(const kseq_t *seq, bntseq_t *bns, uint8_t *pac, int64_t *m_pac, int *m_seqs, int *m_holes, bntamb1_t **q)$/;"	f	file:	signature:(const kseq_t *seq, bntseq_t *bns, uint8_t *pac, int64_t *m_pac, int *m_seqs, int *m_holes, bntamb1_t **q)
+bit_bns_cnt_ambi	4bit_bntseq.c	/^int 4bit_bns_cnt_ambi(const bntseq_t *bns, int64_t pos_f, int len, int *ref_id)$/;"	f	signature:(const bntseq_t *bns, int64_t pos_f, int len, int *ref_id)
+bit_bns_cnt_ambi	bntseq.h	/^	int 4bit_bns_cnt_ambi(const bntseq_t *bns, int64_t pos_f, int len, int *ref_id);$/;"	p	signature:(const bntseq_t *bns, int64_t pos_f, int len, int *ref_id)
+bit_bns_depos	bntseq.h	/^static inline int64_t 4bit_bns_depos(const bntseq_t *bns, int64_t pos, int *is_rev)$/;"	f	signature:(const bntseq_t *bns, int64_t pos, int *is_rev)
+bit_bns_destroy	4bit_bntseq.c	/^void 4bit_bns_destroy(bntseq_t *bns)$/;"	f	signature:(bntseq_t *bns)
+bit_bns_destroy	bntseq.h	/^	void 4bit_bns_destroy(bntseq_t *bns);$/;"	p	signature:(bntseq_t *bns)
+bit_bns_dump	4bit_bntseq.c	/^void 4bit_bns_dump(const bntseq_t *bns, const char *prefix)$/;"	f	signature:(const bntseq_t *bns, const char *prefix)
+bit_bns_dump	bntseq.h	/^	void 4bit_bns_dump(const bntseq_t *bns, const char *prefix);$/;"	p	signature:(const bntseq_t *bns, const char *prefix)
+bit_bns_fasta2bntseq	4bit_bntseq.c	/^int64_t 4bit_bns_fasta2bntseq(gzFile fp_fa, const char *prefix, int for_only)$/;"	f	signature:(gzFile fp_fa, const char *prefix, int for_only)
+bit_bns_fasta2bntseq	bntseq.h	/^	int64_t 4bit_bns_fasta2bntseq(gzFile fp_fa, const char *prefix, int for_only);$/;"	p	signature:(gzFile fp_fa, const char *prefix, int for_only)
+bit_bns_restore	4bit_bntseq.c	/^bntseq_t *4bit_bns_restore(const char *prefix)$/;"	f	signature:(const char *prefix)
+bit_bns_restore	bntseq.h	/^	bntseq_t *4bit_bns_restore(const char *prefix);$/;"	p	signature:(const char *prefix)
+bit_bns_restore_core	4bit_bntseq.c	/^bntseq_t *4bit_bns_restore_core(const char *ann_filename, const char* amb_filename, const char* pac_filename)$/;"	f	signature:(const char *ann_filename, const char* amb_filename, const char* pac_filename)
+bit_bns_restore_core	bntseq.h	/^	bntseq_t *4bit_bns_restore_core(const char *ann_filename, const char* amb_filename, const char* pac_filename);$/;"	p	signature:(const char *ann_filename, const char* amb_filename, const char* pac_filename)
+bit_fa2pac	4bit_bntseq.c	/^int 4bit_fa2pac(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+bns_coor_pac2real	bntseq.c	/^int bns_coor_pac2real(const bntseq_t *bns, int64_t pac_coor, int len, int32_t *real_seq)$/;"	f	signature:(const bntseq_t *bns, int64_t pac_coor, int len, int32_t *real_seq)
+bns_coor_pac2real	bntseq.h	/^	int bns_coor_pac2real(const bntseq_t *bns, int64_t pac_coor, int len, int32_t *real_seq);$/;"	p	signature:(const bntseq_t *bns, int64_t pac_coor, int len, int32_t *real_seq)
+bns_destroy	bntseq.c	/^void bns_destroy(bntseq_t *bns)$/;"	f	signature:(bntseq_t *bns)
+bns_destroy	bntseq.h	/^	void bns_destroy(bntseq_t *bns);$/;"	p	signature:(bntseq_t *bns)
+bns_dump	bntseq.c	/^void bns_dump(const bntseq_t *bns, const char *prefix)$/;"	f	signature:(const bntseq_t *bns, const char *prefix)
+bns_dump	bntseq.h	/^    void bns_dump(const bntseq_t *bns, const char *prefix);$/;"	p	signature:(const bntseq_t *bns, const char *prefix)
+bns_fasta2bntseq	bntseq.c	/^void bns_fasta2bntseq(gzFile fp_fa, const char *prefix)$/;"	f	signature:(gzFile fp_fa, const char *prefix)
+bns_fasta2bntseq	bntseq.h	/^	void bns_fasta2bntseq(gzFile fp_fa, const char *prefix);$/;"	p	signature:(gzFile fp_fa, const char *prefix)
+bns_restore	bntseq.c	/^bntseq_t *bns_restore(const char *prefix)$/;"	f	signature:(const char *prefix)
+bns_restore	bntseq.h	/^	bntseq_t *bns_restore(const char *prefix);$/;"	p	signature:(const char *prefix)
+bns_restore_core	bntseq.c	/^bntseq_t *bns_restore_core(const char *ann_filename, const char* amb_filename, const char* pac_filename)$/;"	f	signature:(const char *ann_filename, const char* amb_filename, const char* pac_filename)
+bns_restore_core	bntseq.h	/^	bntseq_t *bns_restore_core(const char *ann_filename, const char* amb_filename, const char* pac_filename);$/;"	p	signature:(const char *ann_filename, const char* amb_filename, const char* pac_filename)
+bntamb1_t	bntseq.h	/^} bntamb1_t;$/;"	t	typeref:struct:__anon2
+bntann1_t	bntseq.h	/^} bntann1_t;$/;"	t	typeref:struct:__anon1
+bntseq_t	bntseq.h	/^} bntseq_t;$/;"	t	typeref:struct:__anon3
+buildSize	4bit_bwt_gen.h	/^	unsigned int buildSize;$/;"	m	struct:BWTInc	access:public
+buildSize	bwt_gen.h	/^	unsigned int buildSize;$/;"	m	struct:BWTInc	access:public
+build_mixRef	mixRef.c	/^int build_mixRef(const char *fn_fa, const char *fn_hapmap, const char *fn_mixRef)$/;"	f	signature:(const char *fn_fa, const char *fn_hapmap, const char *fn_mixRef)
+build_mixRef	mixRef.h	/^int build_mixRef(const char *fn_fa, const char *fn_hapmap, const char *fn_mixRef);$/;"	p	signature:(const char *fn_fa, const char *fn_hapmap, const char *fn_mixRef)
+bwa_fa2pac	bntseq.c	/^int bwa_fa2pac(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+bwt	4bit_bwt_gen.h	/^	BWT *bwt;$/;"	m	struct:BWTInc	access:public
+bwt	bwt.h	/^	uint32_t *bwt; \/\/ BWT$/;"	m	struct:__anon6	access:public
+bwt	bwt_gen.h	/^	BWT *bwt;$/;"	m	struct:BWTInc	access:public
+bwtCode	4bit_bwt_gen.h	/^	unsigned int *bwtCode;				\/\/ BWT code$/;"	m	struct:BWT	access:public
+bwtCode	bwt_gen.h	/^	unsigned int *bwtCode;				\/\/ BWT code$/;"	m	struct:BWT	access:public
+bwtCode	rbwt.h	/^	unsigned int *bwtCode;				\/\/ bwt_t code$/;"	m	struct:rbwt_t	access:public
+bwtSizeInWord	4bit_bwt_gen.h	/^	unsigned int bwtSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+bwtSizeInWord	bwt_gen.h	/^	unsigned int bwtSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+bwtSizeInWord	rbwt.h	/^	unsigned int bwtSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:rbwt_t	access:public
+bwt_2occ	bwt.c	/^inline void bwt_2occ(const bwt_t *bwt, bwtint_t k, bwtint_t l, ubyte_t c, bwtint_t *ok, bwtint_t *ol)$/;"	f	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t l, ubyte_t c, bwtint_t *ok, bwtint_t *ol)
+bwt_2occ	bwt.h	/^	inline void bwt_2occ(const bwt_t *bwt, bwtint_t k, bwtint_t l, ubyte_t c, bwtint_t *ok, bwtint_t *ol);$/;"	p	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t l, ubyte_t c, bwtint_t *ok, bwtint_t *ol)
+bwt_2occ4	bwt.c	/^inline void bwt_2occ4(const bwt_t *bwt, bwtint_t k, bwtint_t l, bwtint_t cntk[4], bwtint_t cntl[4])$/;"	f	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t l, bwtint_t cntk[4], bwtint_t cntl[4])
+bwt_2occ4	bwt.h	/^	inline void bwt_2occ4(const bwt_t *bwt, bwtint_t k, bwtint_t l, bwtint_t cntk[4], bwtint_t cntl[4]);$/;"	p	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t l, bwtint_t cntk[4], bwtint_t cntl[4])
+bwt_B0	bwt.h	61;"	d
+bwt_bwt	bwt.h	56;"	d
+bwt_bwtgen	bwt.h	/^	void bwt_bwtgen(const char *fn_pac, const char *fn_bwt); \/\/ from BWT-SW$/;"	p	signature:(const char *fn_pac, const char *fn_bwt)
+bwt_bwtgen	bwt_gen.c	/^void bwt_bwtgen(const char *fn_pac, const char *fn_bwt)$/;"	f	signature:(const char *fn_pac, const char *fn_bwt)
+bwt_bwtgen_main	bwt_gen.c	/^int bwt_bwtgen_main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+bwt_bwtupdate_core	bwt.h	/^	void bwt_bwtupdate_core(bwt_t *bwt);$/;"	p	signature:(bwt_t *bwt)
+bwt_cal_sa	bwt.c	/^void bwt_cal_sa(bwt_t *bwt, int intv)$/;"	f	signature:(bwt_t *bwt, int intv)
+bwt_cal_sa	bwt.h	/^	void bwt_cal_sa(bwt_t *bwt, int intv);$/;"	p	signature:(bwt_t *bwt, int intv)
+bwt_destroy	bwt.h	/^	void bwt_destroy(bwt_t *bwt);$/;"	p	signature:(bwt_t *bwt)
+bwt_destroy	bwtio.c	/^void bwt_destroy(bwt_t *bwt)$/;"	f	signature:(bwt_t *bwt)
+bwt_dump_bwt	bwt.h	/^	void bwt_dump_bwt(const char *fn, const bwt_t *bwt);$/;"	p	signature:(const char *fn, const bwt_t *bwt)
+bwt_dump_bwt	bwtio.c	/^void bwt_dump_bwt(const char *fn, const bwt_t *bwt)$/;"	f	signature:(const char *fn, const bwt_t *bwt)
+bwt_dump_sa	bwt.h	/^	void bwt_dump_sa(const char *fn, const bwt_t *bwt);$/;"	p	signature:(const char *fn, const bwt_t *bwt)
+bwt_dump_sa	bwtio.c	/^void bwt_dump_sa(const char *fn, const bwt_t *bwt)$/;"	f	signature:(const char *fn, const bwt_t *bwt)
+bwt_gen_cnt_table	bwt.c	/^void bwt_gen_cnt_table(bwt_t *bwt)$/;"	f	signature:(bwt_t *bwt)
+bwt_gen_cnt_table	bwt.h	/^	void bwt_gen_cnt_table(bwt_t *bwt);$/;"	p	signature:(bwt_t *bwt)
+bwt_invPsi	bwt.h	66;"	d
+bwt_match_exact	bwt.c	/^int bwt_match_exact(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *sa_begin, bwtint_t *sa_end)$/;"	f	signature:(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *sa_begin, bwtint_t *sa_end)
+bwt_match_exact	bwt.h	/^	int bwt_match_exact(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *sa_begin, bwtint_t *sa_end);$/;"	p	signature:(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *sa_begin, bwtint_t *sa_end)
+bwt_match_exact_alt	bwt.c	/^int bwt_match_exact_alt(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *k0, bwtint_t *l0)$/;"	f	signature:(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *k0, bwtint_t *l0)
+bwt_match_exact_alt	bwt.h	/^	int bwt_match_exact_alt(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *k0, bwtint_t *l0);$/;"	p	signature:(const bwt_t *bwt, int len, const ubyte_t *str, bwtint_t *k0, bwtint_t *l0)
+bwt_occ	bwt.c	/^inline bwtint_t bwt_occ(const bwt_t *bwt, bwtint_t k, ubyte_t c)$/;"	f	signature:(const bwt_t *bwt, bwtint_t k, ubyte_t c)
+bwt_occ	bwt.h	/^	inline bwtint_t bwt_occ(const bwt_t *bwt, bwtint_t k, ubyte_t c);$/;"	p	signature:(const bwt_t *bwt, bwtint_t k, ubyte_t c)
+bwt_occ4	bwt.c	/^inline void bwt_occ4(const bwt_t *bwt, bwtint_t k, bwtint_t cnt[4])$/;"	f	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t cnt[4])
+bwt_occ4	bwt.h	/^	inline void bwt_occ4(const bwt_t *bwt, bwtint_t k, bwtint_t cnt[4]);$/;"	p	signature:(const bwt_t *bwt, bwtint_t k, bwtint_t cnt[4])
+bwt_occ_intv	bwt.h	63;"	d
+bwt_restore_bwt	bwt.h	/^	bwt_t *bwt_restore_bwt(const char *fn);$/;"	p	signature:(const char *fn)
+bwt_restore_bwt	bwtio.c	/^bwt_t *bwt_restore_bwt(const char *fn)$/;"	f	signature:(const char *fn)
+bwt_restore_sa	bwt.h	/^	void bwt_restore_sa(const char *fn, bwt_t *bwt);$/;"	p	signature:(const char *fn, bwt_t *bwt)
+bwt_restore_sa	bwtio.c	/^void bwt_restore_sa(const char *fn, bwt_t *bwt)$/;"	f	signature:(const char *fn, bwt_t *bwt)
+bwt_sa	bwt.c	/^bwtint_t bwt_sa(const bwt_t *bwt, bwtint_t k)$/;"	f	signature:(const bwt_t *bwt, bwtint_t k)
+bwt_sa	bwt.h	/^	bwtint_t bwt_sa(const bwt_t *bwt, bwtint_t k);$/;"	p	signature:(const bwt_t *bwt, bwtint_t k)
+bwt_size	bwt.h	/^	bwtint_t bwt_size; \/\/ size of bwt, about seq_len\/4$/;"	m	struct:__anon6	access:public
+bwt_t	bwt.h	/^} bwt_t;$/;"	t	typeref:struct:__anon6
+bwtint_t	bwt.h	/^typedef uint32_t bwtint_t;$/;"	t
+ceilLog2	4bit_bwt_gen.c	/^static unsigned int ceilLog2(const unsigned int input)$/;"	f	file:	signature:(const unsigned int input)
+ceilLog2	bwt_gen.c	/^static unsigned int ceilLog2(const unsigned int input)$/;"	f	file:	signature:(const unsigned int input)
+chrID	hapmap.h	/^    char *chrID;$/;"	m	struct:__anon5	access:public
+cnt_table	bwt.h	/^	uint32_t cnt_table[256];$/;"	m	struct:__anon6	access:public
+cputime	utils.c	/^double cputime()$/;"	f
+cputime	utils.h	/^	double cputime();$/;"	p	signature:()
+cumulativeCountInCurrentBuild	4bit_bwt_gen.h	/^	unsigned int *cumulativeCountInCurrentBuild;$/;"	m	struct:BWTInc	access:public
+cumulativeCountInCurrentBuild	bwt_gen.h	/^	unsigned int *cumulativeCountInCurrentBuild;$/;"	m	struct:BWTInc	access:public
+cumulativeFreq	4bit_bwt_gen.h	/^	unsigned int *cumulativeFreq;		\/\/ cumulative frequency$/;"	m	struct:BWT	access:public
+cumulativeFreq	bwt_gen.h	/^	unsigned int *cumulativeFreq;		\/\/ cumulative frequency$/;"	m	struct:BWT	access:public
+cumulativeFreq	rbwt.h	/^	unsigned int *cumulativeFreq;		\/\/ cumulative frequency$/;"	m	struct:rbwt_t	access:public
+decodeTable	4bit_bwt_gen.h	/^	DECODE_TABLE_T  *decodeTable;			\/\/ For decoding BWT by table lookup$/;"	m	struct:BWT	access:public
+decodeTable	bwt_gen.h	/^	unsigned int *decodeTable;			\/\/ For decoding BWT by table lookup$/;"	m	struct:BWT	access:public
+decodeTable	rbwt.h	/^	DECODE_TABLE_T  *decodeTable;			\/\/ For decoding bwt_t by table lookup$/;"	m	struct:rbwt_t	access:public
+decodeTableGenerated	4bit_bwt_gen.h	/^    unsigned int decodeTableGenerated;	\/\/ == TRUE if decode table is generated on load and will be freed$/;"	m	struct:BWT	access:public
+decodeTableGenerated	bwt_gen.h	/^	unsigned int decodeTableGenerated;	\/\/ == TRUE if decode table is generated on load and will be freed$/;"	m	struct:BWT	access:public
+decodeTableGenerated	rbwt.h	/^    unsigned int decodeTableGenerated;	\/\/ == TRUE if decode table is generated on load and will be freed$/;"	m	struct:rbwt_t	access:public
+endSaIndex	4bit_bwt_gen.h	/^	unsigned int endSaIndex;$/;"	m	struct:SaIndexRange	access:public
+endSaIndex	bwt_gen.h	/^	unsigned int endSaIndex;$/;"	m	struct:SaIndexRange	access:public
+endSaIndex	rbwt.h	/^	unsigned int endSaIndex;$/;"	m	struct:SaIndexRange	access:public
+err_fatal	utils.c	/^void err_fatal(const char *header, const char *fmt, ...)$/;"	f	signature:(const char *header, const char *fmt, ...)
+err_fatal	utils.h	/^	void err_fatal(const char *header, const char *fmt, ...);$/;"	p	signature:(const char *header, const char *fmt, ...)
+err_fatal_simple	utils.h	43;"	d
+err_fatal_simple_core	utils.c	/^void err_fatal_simple_core(const char *func, const char *msg)$/;"	f	signature:(const char *func, const char *msg)
+err_fatal_simple_core	utils.h	/^	void err_fatal_simple_core(const char *func, const char *msg);$/;"	p	signature:(const char *func, const char *msg)
+err_fclose	utils.c	/^int err_fclose(FILE *stream) $/;"	f	signature:(FILE *stream)
+err_fclose	utils.h	/^	int err_fclose(FILE *stream);$/;"	p	signature:(FILE *stream)
+err_fflush	utils.c	/^int err_fflush(FILE *stream) $/;"	f	signature:(FILE *stream)
+err_fflush	utils.h	/^	int err_fflush(FILE *stream);$/;"	p	signature:(FILE *stream)
+err_fprintf	utils.c	/^int err_fprintf(FILE *stream, const char *format, ...) $/;"	f	signature:(FILE *stream, const char *format, ...)
+err_fwrite	utils.c	/^size_t err_fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream)$/;"	f	signature:(const void *ptr, size_t size, size_t nmemb, FILE *stream)
+err_fwrite	utils.h	/^    size_t err_fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);$/;"	p	signature:(const void *ptr, size_t size, size_t nmemb, FILE *stream)
+err_printf	utils.c	/^int err_printf(const char *format, ...) $/;"	f	signature:(const char *format, ...)
+err_xopen_core	utils.c	/^FILE *err_xopen_core(const char *func, const char *fn, const char *mode)$/;"	f	signature:(const char *func, const char *fn, const char *mode)
+err_xopen_core	utils.h	/^	FILE *err_xopen_core(const char *func, const char *fn, const char *mode);$/;"	p	signature:(const char *func, const char *fn, const char *mode)
+err_xreopen_core	utils.c	/^FILE *err_xreopen_core(const char *func, const char *fn, const char *mode, FILE *fp)$/;"	f	signature:(const char *func, const char *fn, const char *mode, FILE *fp)
+err_xreopen_core	utils.h	/^	FILE *err_xreopen_core(const char *func, const char *fn, const char *mode, FILE *fp);$/;"	p	signature:(const char *func, const char *fn, const char *mode, FILE *fp)
+err_xzopen_core	utils.c	/^gzFile err_xzopen_core(const char *func, const char *fn, const char *mode)$/;"	f	signature:(const char *func, const char *fn, const char *mode)
+err_xzopen_core	utils.h	/^	gzFile err_xzopen_core(const char *func, const char *fn, const char *mode);$/;"	p	signature:(const char *func, const char *fn, const char *mode)
+firstCharInLastIteration	4bit_bwt_gen.h	/^	unsigned int firstCharInLastIteration;$/;"	m	struct:BWTInc	access:public
+firstCharInLastIteration	bwt_gen.h	/^	unsigned int firstCharInLastIteration;$/;"	m	struct:BWTInc	access:public
+fp_hapmap	hapmap.h	/^    FILE *fp_hapmap;$/;"	m	struct:__anon5	access:public
+fp_pac	bntseq.h	/^	FILE *fp_pac;$/;"	m	struct:__anon3	access:public
+gi	bntseq.h	/^	uint32_t gi;$/;"	m	struct:__anon1	access:public
+hapmap_destroy	hapmap.c	/^void hapmap_destroy(hapmap_t *hm)$/;"	f	signature:(hapmap_t *hm)
+hapmap_destroy	hapmap.h	/^void hapmap_destroy(hapmap_t *hm);$/;"	p	signature:(hapmap_t *hm)
+hapmap_get_snpnum	hapmap.c	/^int hapmap_get_snpnum(hapmap_t *hm)$/;"	f	signature:(hapmap_t *hm)
+hapmap_get_snpnum	hapmap.h	/^int hapmap_get_snpnum(hapmap_t *hm);$/;"	p	signature:(hapmap_t *hm)
+hapmap_get_snptype	hapmap.h	/^static inline uint8_t hapmap_get_snptype(const uint8_t snptype, const uint8_t snp_type_iter)$/;"	f	signature:(const uint8_t snptype, const uint8_t snp_type_iter)
+hapmap_get_snptypenum	hapmap.h	/^static inline int hapmap_get_snptypenum(uint8_t snp_type)$/;"	f	signature:(uint8_t snp_type)
+hapmap_init	hapmap.c	/^hapmap_t *hapmap_init(FILE *fp)$/;"	f	signature:(FILE *fp)
+hapmap_init	hapmap.h	/^hapmap_t *hapmap_init(FILE *fp);$/;"	p	signature:(FILE *fp)
+hapmap_nt2snptypei	hapmap.c	/^uint8_t hapmap_nt2snptypei(uint8_t snptype, const uint8_t ref_nt)$/;"	f	signature:(uint8_t snptype, const uint8_t ref_nt)
+hapmap_nt2snptypei	hapmap.h	/^uint8_t hapmap_nt2snptypei(uint8_t snptype, const uint8_t ref_nt);$/;"	p	signature:(uint8_t snptype, const uint8_t ref_nt)
+hapmap_readhm	hapmap.c	/^int hapmap_readhm(hapmap_t *hm)$/;"	f	signature:(hapmap_t *hm)
+hapmap_readhm	hapmap.h	/^int hapmap_readhm(hapmap_t *hm);$/;"	p	signature:(hapmap_t *hm)
+hapmap_t	hapmap.h	/^} hapmap_t;$/;"	t	typeref:struct:__anon5
+incMaxBuildSize	4bit_bwt_gen.h	/^	unsigned int incMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+incMaxBuildSize	bwt_gen.h	/^	unsigned int incMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+index_main	index1.c	/^int index_main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+index_usage	index1.c	/^static int index_usage()$/;"	f	file:
+initialMaxBuildSize	4bit_bwt_gen.h	/^	unsigned int initialMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+initialMaxBuildSize	bwt_gen.h	/^	unsigned int initialMaxBuildSize;$/;"	m	struct:BWTInc	access:public
+initializeVAL	4bit_bwt_gen.c	/^static void initializeVAL(unsigned int *startAddr, const unsigned int length, const unsigned int initValue)$/;"	f	file:	signature:(unsigned int *startAddr, const unsigned int length, const unsigned int initValue)
+initializeVAL	bwt_gen.c	/^static void initializeVAL(unsigned int *startAddr, const unsigned int length, const unsigned int initValue)$/;"	f	file:	signature:(unsigned int *startAddr, const unsigned int length, const unsigned int initValue)
+initializeVAL	rbwt.c	/^static void initializeVAL(unsigned int *startAddr, const unsigned int length, const unsigned int initValue)$/;"	f	file:	signature:(unsigned int *startAddr, const unsigned int length, const unsigned int initValue)
+inverseSa	4bit_bwt_gen.h	/^	unsigned int *inverseSa;			\/\/ Inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+inverseSa	bwt_gen.h	/^	unsigned int *inverseSa;			\/\/ Inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+inverseSa0	4bit_bwt_gen.h	/^	unsigned int inverseSa0;			\/\/ SA-1[0]$/;"	m	struct:BWT	access:public
+inverseSa0	bwt_gen.h	/^	unsigned int inverseSa0;			\/\/ SA-1[0]$/;"	m	struct:BWT	access:public
+inverseSa0	rbwt.h	/^	unsigned int inverseSa0;			\/\/ SA-1[0]$/;"	m	struct:rbwt_t	access:public
+inverseSaInterval	4bit_bwt_gen.h	/^	unsigned int inverseSaInterval;		\/\/ interval between two inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+inverseSaInterval	bwt_gen.h	/^	unsigned int inverseSaInterval;		\/\/ interval between two inverse SA stored explicitly$/;"	m	struct:BWT	access:public
+inverseSaSize	4bit_bwt_gen.h	/^    unsigned int inverseSaSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+inverseSaSize	bwt_gen.h	/^	unsigned int inverseSaSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+item	LookUpTable.h	/^    uint32_t *item;$/;"	m	struct:__anon4	access:public
+kroundup32	kseq.h	88;"	d
+ks_eof	kseq.h	47;"	d
+ks_rewind	kseq.h	48;"	d
+kseq_rewind	kseq.h	149;"	d
+kstring_t	kseq.h	/^} kstring_t;$/;"	t	typeref:struct:__kstring_t
+l	kseq.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+l	mixRef.h	/^    uint32_t l;$/;"	m	struct:__anon7	access:public
+l_pac	bntseq.h	/^	int64_t l_pac;$/;"	m	struct:__anon3	access:public
+leadingZero	4bit_bwt_gen.c	/^static unsigned int leadingZero(const unsigned int input)$/;"	f	file:	signature:(const unsigned int input)
+leadingZero	bwt_gen.c	/^unsigned int leadingZero(const unsigned int input)$/;"	f	signature:(const unsigned int input)
+len	bntseq.h	/^	int32_t len;$/;"	m	struct:__anon1	access:public
+len	bntseq.h	/^	int32_t len;$/;"	m	struct:__anon2	access:public
+lookupTable_t	LookUpTable.h	/^} lookupTable_t;$/;"	t	typeref:struct:__anon4
+m	kseq.h	/^	size_t l, m;$/;"	m	struct:__kstring_t	access:public
+main	4bit_bwt_gen.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	LookUpTable.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	bwt_gen.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	hapmap.c	/^int main()$/;"	f
+main	localPattern.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	mixRef.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	snpSeg.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	test_fa2pac.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+max	4bit_bwt_gen.h	52;"	d
+max	bwt_gen.h	52;"	d
+maxLookupLen	LookUpTable.h	/^    uint32_t maxLookupLen;$/;"	m	struct:__anon4	access:public
+maxLookupLen	index1.c	/^int maxLookupLen = 12;$/;"	v
+med3	4bit_bwt_gen.h	53;"	d
+med3	bwt_gen.h	53;"	d
+min	4bit_bwt_gen.h	51;"	d
+min	bwt_gen.h	51;"	d
+mixRef_destroy	mixRef.c	/^void mixRef_destroy(mixRef_t *mixRef)$/;"	f	signature:(mixRef_t *mixRef)
+mixRef_destroy	mixRef.h	/^void mixRef_destroy(mixRef_t *mixRef);$/;"	p	signature:(mixRef_t *mixRef)
+mixRef_restore	mixRef.c	/^mixRef_t *mixRef_restore(const char *fn)$/;"	f	signature:(const char *fn)
+mixRef_restore	mixRef.h	/^mixRef_t *mixRef_restore(const char *fn);$/;"	p	signature:(const char *fn)
+mixRef_t	mixRef.h	/^} mixRef_t;$/;"	t	typeref:struct:__anon7
+n	rbwt.h	/^    int n;$/;"	m	struct:sharp2Ri_t	access:public
+n_ambs	bntseq.h	/^	int32_t n_ambs;$/;"	m	struct:__anon1	access:public
+n_holes	bntseq.h	/^	int32_t n_holes;$/;"	m	struct:__anon3	access:public
+n_item	LookUpTable.h	/^    uint32_t n_item;$/;"	m	struct:__anon4	access:public
+n_sa	bwt.h	/^	bwtint_t n_sa;$/;"	m	struct:__anon6	access:public
+n_seqs	bntseq.h	/^	int32_t n_seqs;$/;"	m	struct:__anon3	access:public
+name	bntseq.h	/^	char *name, *anno;$/;"	m	struct:__anon1	access:public
+nst_nt4_table	hapmap.c	/^static unsigned char nst_nt4_table[256] = {$/;"	v	file:
+nt5_4bit_table	mixRef.c	/^static uint8_t nt5_4bit_table[256] = {$/;"	v	file:
+numOf1	hapmap.h	/^static int numOf1[16] = {  0, 1, 1, 2,$/;"	v
+numberOfIterationDone	4bit_bwt_gen.h	/^	unsigned int numberOfIterationDone;$/;"	m	struct:BWTInc	access:public
+numberOfIterationDone	bwt_gen.h	/^	unsigned int numberOfIterationDone;$/;"	m	struct:BWTInc	access:public
+occMajorSizeInWord	4bit_bwt_gen.h	/^	unsigned int occMajorSizeInWord;	\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+occMajorSizeInWord	bwt_gen.h	/^	unsigned int occMajorSizeInWord;	\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+occMajorSizeInWord	rbwt.h	/^	unsigned int occMajorSizeInWord;	\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:rbwt_t	access:public
+occSizeInWord	4bit_bwt_gen.h	/^	unsigned int occSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+occSizeInWord	bwt_gen.h	/^	unsigned int occSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+occSizeInWord	rbwt.h	/^	unsigned int occSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:rbwt_t	access:public
+occValue	4bit_bwt_gen.h	/^	unsigned int *occValue;				\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+occValue	bwt_gen.h	/^	unsigned int *occValue;				\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+occValue	rbwt.h	/^	unsigned int *occValue;				\/\/ Occurrence values stored explicitly$/;"	m	struct:rbwt_t	access:public
+occValueMajor	4bit_bwt_gen.h	/^	unsigned int *occValueMajor;		\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+occValueMajor	bwt_gen.h	/^	unsigned int *occValueMajor;		\/\/ Occurrence values stored explicitly$/;"	m	struct:BWT	access:public
+occValueMajor	rbwt.h	/^	unsigned int *occValueMajor;		\/\/ Occurrence values stored explicitly$/;"	m	struct:rbwt_t	access:public
+offset	bntseq.h	/^	int64_t offset;$/;"	m	struct:__anon1	access:public
+offset	bntseq.h	/^	int64_t offset;$/;"	m	struct:__anon2	access:public
+packedShift	4bit_bwt_gen.h	/^	unsigned int *packedShift;$/;"	m	struct:BWTInc	access:public
+packedShift	bwt_gen.h	/^	unsigned int *packedShift;$/;"	m	struct:BWTInc	access:public
+packedText	4bit_bwt_gen.h	/^	unsigned int *packedText;$/;"	m	struct:BWTInc	access:public
+packedText	bwt_gen.h	/^	unsigned int *packedText;$/;"	m	struct:BWTInc	access:public
+primary	bwt.h	/^	bwtint_t primary; \/\/ S^{-1}(0), or the primary index of BWT$/;"	m	struct:__anon6	access:public
+rbwt0	rbwt.h	/^    rbwt_t *rbwt0, *rbwt1;\/\/forward rbwt && backward rbwt$/;"	m	struct:rbwt2_t	access:public
+rbwt1	rbwt.h	/^    rbwt_t *rbwt0, *rbwt1;\/\/forward rbwt && backward rbwt$/;"	m	struct:rbwt2_t	access:public
+rbwt2_t	rbwt.h	/^typedef struct rbwt2_t{$/;"	s
+rbwt2_t	rbwt.h	/^} rbwt2_t;$/;"	t	typeref:struct:rbwt2_t
+rbwt2_t::rbwt0	rbwt.h	/^    rbwt_t *rbwt0, *rbwt1;\/\/forward rbwt && backward rbwt$/;"	m	struct:rbwt2_t	access:public
+rbwt2_t::rbwt1	rbwt.h	/^    rbwt_t *rbwt0, *rbwt1;\/\/forward rbwt && backward rbwt$/;"	m	struct:rbwt2_t	access:public
+rbwt_t	rbwt.h	/^typedef struct rbwt_t {$/;"	s
+rbwt_t	rbwt.h	/^} rbwt_t;$/;"	t	typeref:struct:rbwt_t
+rbwt_t::bwtCode	rbwt.h	/^	unsigned int *bwtCode;				\/\/ bwt_t code$/;"	m	struct:rbwt_t	access:public
+rbwt_t::bwtSizeInWord	rbwt.h	/^	unsigned int bwtSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:rbwt_t	access:public
+rbwt_t::cumulativeFreq	rbwt.h	/^	unsigned int *cumulativeFreq;		\/\/ cumulative frequency$/;"	m	struct:rbwt_t	access:public
+rbwt_t::decodeTable	rbwt.h	/^	DECODE_TABLE_T  *decodeTable;			\/\/ For decoding bwt_t by table lookup$/;"	m	struct:rbwt_t	access:public
+rbwt_t::decodeTableGenerated	rbwt.h	/^    unsigned int decodeTableGenerated;	\/\/ == TRUE if decode table is generated on load and will be freed$/;"	m	struct:rbwt_t	access:public
+rbwt_t::inverseSa0	rbwt.h	/^	unsigned int inverseSa0;			\/\/ SA-1[0]$/;"	m	struct:rbwt_t	access:public
+rbwt_t::occMajorSizeInWord	rbwt.h	/^	unsigned int occMajorSizeInWord;	\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:rbwt_t	access:public
+rbwt_t::occSizeInWord	rbwt.h	/^	unsigned int occSizeInWord;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:rbwt_t	access:public
+rbwt_t::occValue	rbwt.h	/^	unsigned int *occValue;				\/\/ Occurrence values stored explicitly$/;"	m	struct:rbwt_t	access:public
+rbwt_t::occValueMajor	rbwt.h	/^	unsigned int *occValueMajor;		\/\/ Occurrence values stored explicitly$/;"	m	struct:rbwt_t	access:public
+rbwt_t::saInterval	rbwt.h	/^	unsigned int saInterval;			\/\/ interval between two SA values stored explicitly$/;"	m	struct:rbwt_t	access:public
+rbwt_t::saValueSharp	rbwt.h	/^    unsigned int *saValueSharp;$/;"	m	struct:rbwt_t	access:public
+rbwt_t::saValueSizeSharp	rbwt.h	/^	unsigned int saValueSizeSharp;$/;"	m	struct:rbwt_t	access:public
+rbwt_t::textLength	rbwt.h	/^	unsigned int textLength;			\/\/ length of the text$/;"	m	struct:rbwt_t	access:public
+realtime	utils.c	/^double realtime()$/;"	f
+realtime	utils.h	/^	double realtime();$/;"	p	signature:()
+s	kseq.h	/^	char *s;$/;"	m	struct:__kstring_t	access:public
+sa	bwt.h	/^	bwtint_t *sa;$/;"	m	struct:__anon6	access:public
+saIndexRange	4bit_bwt_gen.h	/^	SaIndexRange *saIndexRange;			\/\/ SA index range$/;"	m	struct:BWT	access:public
+saIndexRange	bwt_gen.h	/^	SaIndexRange *saIndexRange;			\/\/ SA index range$/;"	m	struct:BWT	access:public
+saIndexRangeNumOfChar	4bit_bwt_gen.h	/^	int saIndexRangeNumOfChar;			\/\/ Number of characters indexed in SA index range$/;"	m	struct:BWT	access:public
+saIndexRangeNumOfChar	bwt_gen.h	/^	int saIndexRangeNumOfChar;			\/\/ Number of characters indexed in SA index range$/;"	m	struct:BWT	access:public
+saIndexRangeSize	4bit_bwt_gen.h	/^	unsigned int saIndexRangeSize;		\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+saIndexRangeSize	bwt_gen.h	/^	unsigned int saIndexRangeSize;		\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+saInterval	4bit_bwt_gen.h	/^	unsigned int saInterval;			\/\/ interval between two SA values stored explicitly$/;"	m	struct:BWT	access:public
+saInterval	bwt_gen.h	/^	unsigned int saInterval;			\/\/ interval between two SA values stored explicitly$/;"	m	struct:BWT	access:public
+saInterval	rbwt.h	/^	unsigned int saInterval;			\/\/ interval between two SA values stored explicitly$/;"	m	struct:rbwt_t	access:public
+saValue	4bit_bwt_gen.h	/^	unsigned int *saValue;    \/\/ SA values stored explicitly$/;"	m	struct:BWT	access:public
+saValue	bwt_gen.h	/^	unsigned int *saValue;				\/\/ SA values stored explicitly$/;"	m	struct:BWT	access:public
+saValueOnBoundary	4bit_bwt_gen.h	/^	unsigned int *saValueOnBoundary;	\/\/ Pre-calculated frequently referred data$/;"	m	struct:BWT	access:public
+saValueOnBoundary	bwt_gen.h	/^	unsigned int *saValueOnBoundary;	\/\/ Pre-calculated frequently referred data$/;"	m	struct:BWT	access:public
+saValueSharp	4bit_bwt_gen.h	/^    unsigned int *saValueSharp;$/;"	m	struct:BWT	access:public
+saValueSharp	rbwt.h	/^    unsigned int *saValueSharp;$/;"	m	struct:rbwt_t	access:public
+saValueSize	4bit_bwt_gen.h	/^	unsigned int saValueSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+saValueSize	bwt_gen.h	/^	unsigned int saValueSize;			\/\/ Temporary variable to hold the memory allocated$/;"	m	struct:BWT	access:public
+saValueSizeSharp	4bit_bwt_gen.h	/^	unsigned int saValueSizeSharp;$/;"	m	struct:BWT	access:public
+saValueSizeSharp	rbwt.h	/^	unsigned int saValueSizeSharp;$/;"	m	struct:rbwt_t	access:public
+sa_intv	bwt.h	/^	int sa_intv;$/;"	m	struct:__anon6	access:public
+seed	bntseq.h	/^	uint32_t seed;$/;"	m	struct:__anon3	access:public
+seq	mixRef.h	/^    uint32_t *seq;$/;"	m	struct:__anon7	access:public
+seq_len	bwt.h	/^	bwtint_t seq_len; \/\/ sequence length$/;"	m	struct:__anon6	access:public
+sharp2Ri_array	rbwt.h	/^    int *sharp2Ri_array;$/;"	m	struct:sharp2Ri_t	access:public
+sharp2Ri_t	rbwt.h	/^typedef struct sharp2Ri_t{$/;"	s
+sharp2Ri_t	rbwt.h	/^} sharp2Ri_t;$/;"	t	typeref:struct:sharp2Ri_t
+sharp2Ri_t::n	rbwt.h	/^    int n;$/;"	m	struct:sharp2Ri_t	access:public
+sharp2Ri_t::sharp2Ri_array	rbwt.h	/^    int *sharp2Ri_array;$/;"	m	struct:sharp2Ri_t	access:public
+snp_num	hapmap.h	/^    uint32_t snp_num;$/;"	m	struct:__anon5	access:public
+snp_pos	hapmap.h	/^    uint32_t *snp_pos;$/;"	m	struct:__anon5	access:public
+snp_type	hapmap.h	/^    uint8_t *snp_type;$/;"	m	struct:__anon5	access:public
+snptype_map0	hapmap.h	/^static uint8_t snptype_map0[16] ={  4, 0, 1, 0, $/;"	v
+snptype_map1	hapmap.h	/^static uint8_t snptype_map1[16] ={  4, 4, 4, 1, $/;"	v
+snptype_map2	hapmap.h	/^static uint8_t snptype_map2[16] ={  4, 4, 4, 4,$/;"	v
+snptype_map3	hapmap.h	/^static uint8_t snptype_map3[16] ={  4, 4, 4, 4,$/;"	v
+ss_core	localPattern.h	/^int ss_core(const char *fn_ref, const char *fn_hm, const char *fn_out);$/;"	p	signature:(const char *fn_ref, const char *fn_hm, const char *fn_out)
+ss_main	localPattern.c	/^int ss_main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+ss_main	snpSeg.c	/^int ss_main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+startSaIndex	4bit_bwt_gen.h	/^	unsigned int startSaIndex;$/;"	m	struct:SaIndexRange	access:public
+startSaIndex	bwt_gen.h	/^	unsigned int startSaIndex;$/;"	m	struct:SaIndexRange	access:public
+startSaIndex	rbwt.h	/^	unsigned int startSaIndex;$/;"	m	struct:SaIndexRange	access:public
+swap	4bit_bwt_gen.h	54;"	d
+swap	bwt_gen.h	54;"	d
+targetNBit	4bit_bwt_gen.h	/^	float targetNBit;$/;"	m	struct:BWTInc	access:public
+targetNBit	bwt_gen.h	/^	float targetNBit;$/;"	m	struct:BWTInc	access:public
+targetTextLength	4bit_bwt_gen.h	/^	unsigned int targetTextLength;$/;"	m	struct:BWTInc	access:public
+targetTextLength	bwt_gen.h	/^	unsigned int targetTextLength;$/;"	m	struct:BWTInc	access:public
+textBuffer	4bit_bwt_gen.h	/^	unsigned char *textBuffer;$/;"	m	struct:BWTInc	access:public
+textBuffer	bwt_gen.h	/^	unsigned char *textBuffer;$/;"	m	struct:BWTInc	access:public
+textLength	4bit_bwt_gen.h	/^	unsigned int textLength;			\/\/ length of the text$/;"	m	struct:BWT	access:public
+textLength	bwt_gen.h	/^	unsigned int textLength;			\/\/ length of the text$/;"	m	struct:BWT	access:public
+textLength	rbwt.h	/^	unsigned int textLength;			\/\/ length of the text$/;"	m	struct:rbwt_t	access:public
+truncateLeft	4bit_bwt_gen.h	55;"	d
+truncateLeft	bwt_gen.h	55;"	d
+truncateRight	4bit_bwt_gen.h	56;"	d
+truncateRight	bwt_gen.h	56;"	d
+ubyte_t	bntseq.h	/^typedef uint8_t ubyte_t;$/;"	t
+ubyte_t	bwt.h	/^typedef unsigned char ubyte_t;$/;"	t
+usage	mixRef.c	/^static int usage()$/;"	f	file:
+workingMemory	4bit_bwt_gen.h	/^	unsigned int *workingMemory;$/;"	m	struct:BWTInc	access:public
+workingMemory	bwt_gen.h	/^	unsigned int *workingMemory;$/;"	m	struct:BWTInc	access:public
+xassert	utils.h	47;"	d
+xopen	utils.h	44;"	d
+xreopen	utils.h	45;"	d
+xzopen	utils.h	46;"	d

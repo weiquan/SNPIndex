@@ -505,10 +505,10 @@ void Rbwt2_save_sa(const char *prefix,const char *fn_localpattern)
     rbwt2_t *rbwt2 = NULL;
     char bwt0[256], bwt1[256], occ0[256], occ1[256]; 
     
-    strncpy(bwt0, prefix, 256);strcat(bwt0, ".R.forward.bwt");
-    strncpy(bwt1, prefix, 256);strcat(bwt1, ".R.backward.bwt");
-    strncpy(occ0, prefix, 256);strcat(occ0, ".R.forward.occ");
-    strncpy(occ1, prefix, 256);strcat(occ1, ".R.backward.occ");
+    strncpy(bwt0, prefix, 256);strcat(bwt0, ".forward.bwt");
+    strncpy(bwt1, prefix, 256);strcat(bwt1, ".backward.bwt");
+    strncpy(occ0, prefix, 256);strcat(occ0, ".forward.occ");
+    strncpy(occ1, prefix, 256);strcat(occ1, ".backward.occ");
    
     rbwt2 = calloc(1, sizeof(rbwt2_t));
     if(rbwt2 == NULL) {
@@ -536,8 +536,8 @@ void Rbwt2_save_sa(const char *prefix,const char *fn_localpattern)
     char sa0[256], sa1[256];
     FILE *fp_sa0, *fp_sa1;
     
-    strncpy(sa0, prefix, 256);strcat(sa0, ".sa_0");
-    strncpy(sa1, prefix, 256);strcat(sa1, ".sa_1");
+    strncpy(sa0, prefix, 256);strcat(sa0, ".forward.sa");
+    strncpy(sa1, prefix, 256);strcat(sa1, ".backward.sa");
     fp_sa0 = fopen(sa0, "wb");
     fwrite(&rbwt0->saValueSizeSharp, 1, sizeof(uint32_t), fp_sa0);
     fwrite(rbwt0->saValueSharp, rbwt0->saValueSizeSharp, sizeof(uint32_t), fp_sa0);

@@ -1450,7 +1450,7 @@ void Rbwt_bwt_bwtgen(const char *fn_pac, const char *fn)
     int incMaxBuildSize = 10000000;
     char fn_bwt[128], fn_Occ[128];
     strcpy(fn_bwt, fn);strcat(fn_bwt, ".bwt");
-    strcpy(fn_Occ, fn);strcat(fn_Occ, ".Occ");
+    strcpy(fn_Occ, fn);strcat(fn_Occ, ".occ");
     BWTInc *bwtInc;
     bwtInc = BWTIncConstructFromPacked(fn_pac, targetNBit, initMaxBuildSize, incMaxBuildSize);
 	printf("[bwt_gen] Finished constructing BWT in %u iterations.\n", bwtInc->numberOfIterationDone);

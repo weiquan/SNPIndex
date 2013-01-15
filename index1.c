@@ -127,7 +127,7 @@ int index_main(int argc, char *argv[])
     fp_lp = gzopen(str0, "r");
     fprintf(stderr, "[snpaln_index] convert local pattern to pac with prefix %s\n", str1);
     R_bns_fasta2bntseq(fp_lp, str1);
-    gzclose(fp_fa);
+    gzclose(fp_lp);
     fprintf(stderr, "[snpaln_index] R part fa2pac %.2f seconds elapse.\n", 
                                      (float)(clock() - t) / CLOCKS_PER_SEC);
                             //pac to bwt 

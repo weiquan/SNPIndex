@@ -245,16 +245,15 @@ int64_t R_bns_fasta2bntseq(gzFile fp_fa, const char *prefix)
     fp_r = xopen(name, "wb");
 	// read sequences
 	while (kseq_read(seq) >= 0) pac = R_add1(seq, bns, pac, &m_pac, &m_seqs, &m_holes, &q);
-    /*
-    if (!for_only) { // add the reverse complemented sequence
-		m_pac = (bns->l_pac * 2 + 3) / 4 * 4;
-		pac = realloc(pac, m_pac/4);
-		memset(pac + (bns->l_pac+3)/4, 0, (m_pac - (bns->l_pac+3)/4*4) / 4);
-		for (l = bns->l_pac - 1; l >= 0; --l, ++bns->l_pac)
-			_set_pac(pac, bns->l_pac, 3-_get_pac(pac, l));
-	}
-	ret = bns->l_pac;*/
-    fprintf(stderr, "[bns_fasta2bntseq]:reverse_pac!\n");
+    
+   // add the reverse complemented sequence
+
+
+
+
+
+    ret = bns->l_pac;
+    fprintf(stderr, "[R_bns_fasta2bntseq]:reverse_pac!\n");
     m_r_pac = (bns->l_pac +NT_PER_BYTE-1)/NT_PER_BYTE *NT_PER_BYTE;
     reverse_pac = calloc(m_r_pac/NT_PER_BYTE, sizeof(uint8_t));
     for(l = bns->l_pac-1, i =0; l>=0, i < bns->l_pac; --l, ++i)
@@ -283,7 +282,7 @@ int64_t R_bns_fasta2bntseq(gzFile fp_fa, const char *prefix)
 		}
 		ct = bns->l_pac % NT_PER_BYTE;
 		fwrite(&ct, 1, 1, fp_r);
-		// close .pac file
+		// close .rpac file
 		fclose(fp_r);
 	}
 	bns_dump(bns, prefix);
@@ -310,6 +309,7 @@ int R_fa2pac(int argc, char *argv[])
 	fp = xzopen(argv[optind], "r");
 	R_bns_fasta2bntseq(fp, (optind+1 < argc)? argv[optind+1] : argv[optind]);
 	gzclose(fp);
+
 	return 0;
 }
 /*

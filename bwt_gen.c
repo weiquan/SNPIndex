@@ -28,6 +28,7 @@
 #include "bwt_gen.h"
 #include "QSufSort.h"
 
+#define MIN_AVAILABLE_WORD 0x10000
 
 static unsigned int TextLengthFromBytePacked(unsigned int bytePackedLength, unsigned int bitPerChar,
 											 unsigned int lastByteLength)
@@ -318,11 +319,19 @@ BWTInc *BWTIncCreate(const unsigned int textLength, const float targetNBit,
 	}
 
 	bwtInc->targetTextLength = textLength;
-	bwtInc->availableWord = (unsigned int)((textLength + OCC_INTERVAL - 1) / OCC_INTERVAL * OCC_INTERVAL / BITS_IN_WORD * bwtInc->targetNBit);
-	if (bwtInc->availableWord < BWTResidentSizeInWord(textLength) + BWTOccValueMinorSizeInWord(textLength)) {
-		fprintf(stderr, "BWTIncCreate() : targetNBit is too low!\n");
-		exit(1);
-	}
+	//bwtInc->availableWord = (unsigned int)((textLength + OCC_INTERVAL - 1) / OCC_INTERVAL * OCC_INTERVAL / BITS_IN_WORD * bwtInc->targetNBit);
+	//if (bwtInc->availableWord < BWTResidentSizeInWord(textLength) + BWTOccValueMinorSizeInWord(textLength)) {
+	//	fprintf(stderr, "BWTIncCreate() : targetNBit is too low!\n");
+	//	exit(1);
+	//}
+    
+	uint32_t n_iter = (textLength - initialMaxBuildSize) / incMaxBuildSize + 1;
+    bwtInc->availableWord = BWTResidentSizeInWord(textLength) + BWTOccValueMinorSizeInWord(textLength) // minimal memory requirement
+		+ OCC_INTERVAL / BIT_PER_CHAR * n_iter * 2 // buffer at the end of occ array 
+		+ incMaxBuildSize/5 * 3; // space for the 3 temporary arrays in each iteration
+	if (bwtInc->availableWord < MIN_AVAILABLE_WORD) bwtInc->availableWord = MIN_AVAILABLE_WORD; // lh3: otherwise segfaul when availableWord is too small
+	fprintf(stderr, "[%s] textLength=%ld, availableWord=%ld\n", __func__, (long)textLength, (long)bwtInc->availableWord);
+
 	bwtInc->workingMemory = (unsigned*)calloc(bwtInc->availableWord, BYTES_IN_WORD);
 
 	return bwtInc;

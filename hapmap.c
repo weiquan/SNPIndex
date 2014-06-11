@@ -126,7 +126,8 @@ int hapmap_readhm(hapmap_t *hm)
     snp_type = 0;
     for(j = 0; j < strlen(str_buf); j += 2){
         char_nt = nst_nt4_table[(uint32_t)str_buf[j]];
-        snp_type = snp_type|(1<<char_nt);
+        //snp_type = snp_type|(1<<char_nt);
+        snp_type |= 1<<char_nt;
     } 
     str_buf = strtok(NULL, "\t");//ref
     char_nt = nst_nt4_table[(uint32_t)str_buf[0]];

@@ -40,7 +40,7 @@ static int index_usage()
 //  index.R.rpac index.R.for.bwt index.R.for.occ index.R.for.sa 
 //  index.R.pac index.R.back.bwt index.R.back.occ index.R.back.sa 
 //  index.lp index.ref
-int C_sa_intv = 32;
+int C_sa_intv = 8;
 int maxLookupLen = 12;
 int index_main(int argc, char *argv[])
 {
